@@ -2,57 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #ch1{
-            border-style: solid;
-            box-sizing: content-box;
-            width: 450px;
-            height: 300px;
-            float : right;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+#ch1 {
+	border-style: solid;
+	box-sizing: content-box;
+	width: 450px;
+	height: 300px;
+	float: right;
+}
+</style>
 </head>
 <body>
-	 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
-    <div id="ch1">
-    <canvas id="myChart" width="450" height="300"></canvas>
-    <script>
+	<div id="ch1">
+		<canvas id="myChart" width="450" height="300"></canvas>
+		<script>
             const ctx = document.getElementById('myChart').getContext('2d');
             const myChart = new Chart(ctx, {
                 type: 'bar',
             data: {
                 labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '1번',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-            'rgba(255, 99, 132, 0.2)'
-            
-            ],
-            borderColor: [
-            'rgba(255, 99, 132, 1)'
-            
-            ],
-            borderWidth: 1
-        }]
-    },
-            options: {
-                responsive : false,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        display : false
-            }
-        }
-    }
-});
+	            datasets: [{
+		            label: '1번',
+		            data: [12, 19, 3, 5, 2, 3],
+		            backgroundColor: [
+		            'rgba(255, 99, 132, 0.2)'
+	            	],
+		            borderColor: [
+		            'rgba(255, 99, 132, 1)'
+		            ],
+	            	borderWidth: 1
+	        	}]
+    		},
+	            options: {
+	                responsive : false,
+	                scales: {
+	                    y: {
+	                        beginAtZero: true,
+	                        display : false
+	            		}
+	        		}
+	    		}
+			});
     </script>
-     <canvas id="myChart2" width="300" height="300"></canvas>
-     <script>
+		<canvas id="myChart2" width="300" height="300"></canvas>
+		<script>
      // 차트를 그럴 영역을 dom요소로 가져온다.
      var chartArea = document.getElementById('myChart2').getContext('2d');
      // 차트를 생성한다. 
@@ -92,8 +91,8 @@
          }
      });
      </script>
-     <canvas id="myChart3" width="300" height="300"></canvas>
-     <script>
+		<canvas id="myChart3" width="300" height="300"></canvas>
+		<script>
      // 차트를 그럴 영역을 dom요소로 가져온다.
      var chartArea = document.getElementById('myChart3').getContext('2d');
      // 차트를 생성한다. 
@@ -133,12 +132,12 @@
          }
      });
      </script>
-    </div>
+	</div>
 
 
-    <div id="ch2">
-     <canvas id="myChart4" width="450" height="300"></canvas>
-     <script>
+	<div id="ch2">
+		<canvas id="myChart4" width="450" height="300"></canvas>
+		<script>
      // 차트를 그럴 영역을 dom요소로 가져온다.
      var chartArea = document.getElementById('myChart4').getContext('2d');
      // 차트를 생성한다. 
@@ -178,8 +177,8 @@
          }
      });
      </script>
-     <canvas id="myChart5" width="450" height="300"></canvas>
-     <script>
+		<canvas id="myChart5" width="450" height="300"></canvas>
+		<script>
      // 차트를 그럴 영역을 dom요소로 가져온다.
      var chartArea = document.getElementById('myChart5').getContext('2d');
      // 차트를 생성한다. 
@@ -219,8 +218,8 @@
          }
      });
      </script>
-     <canvas id="myChart6" width="450" height="300"></canvas>
-     <script>
+		<canvas id="myChart6" width="450" height="300"></canvas>
+		<script>
      // 차트를 그럴 영역을 dom요소로 가져온다.
      var chartArea = document.getElementById('myChart6').getContext('2d');
      // 차트를 생성한다. 
@@ -260,6 +259,6 @@
          }
      });
      </script>
-     </div>
+	</div>
 </body>
 </html>
