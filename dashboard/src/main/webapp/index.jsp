@@ -18,13 +18,12 @@
 <body>
 	<script
 		src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-
 	<div id="ch1">
 		<canvas id="myChart" width="450" height="300"></canvas>
 		<script>
             const ctx = document.getElementById('myChart').getContext('2d');
             const myChart = new Chart(ctx, {
-                type: 'bar',
+            type: 'bar',
             data: {
                 labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
 	            datasets: [{

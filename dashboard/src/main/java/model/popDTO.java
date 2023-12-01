@@ -12,6 +12,9 @@ public class popDTO {
 		this.pop_male = pop_male;
 		this.pop_female = pop_female;
 	}
+	public popDTO() {
+		
+	}
 	public String getPop_gu() {
 		return pop_gu;
 	}
