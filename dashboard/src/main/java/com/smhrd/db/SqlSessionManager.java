@@ -1,4 +1,4 @@
-package db;
+package com.smhrd.db;
 
 import java.io.InputStream;
 
@@ -6,11 +6,11 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-public class sqlSessionManager {
+public class SqlSessionManager {
 	public static SqlSessionFactory sqlSessionFactory;
 	
 	static {
-		String resource = "db/mybatisConfig.xml";
+		String resource = "com/smhrd/db/mybatisConfig.xml";
 		InputStream inputStream;
 		try {
 			inputStream = Resources.getResourceAsStream(resource);

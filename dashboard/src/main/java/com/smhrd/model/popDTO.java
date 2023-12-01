@@ -1,4 +1,4 @@
-package model;
+package com.smhrd.model;
 
 public class popDTO {
 	private String pop_gu;

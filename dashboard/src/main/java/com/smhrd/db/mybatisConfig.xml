@@ -15,6 +15,7 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+    <mapper resource="com/smhrd/db/boardMapper.xml"/>
+    <mapper resource="com/smhrd/db/pop-board.xml"/>
   </mappers>
 </configuration>
