@@ -97,10 +97,6 @@
     <div id="full">
         <div id="left">
             <div id="comp"></div>
-            
-            
-            
-            
             인구현황
 		      <button id ="dg" onclick="getdongData()">동구</button>
 		      <button id ="sg" onclick="getseoData()">서구</button>
