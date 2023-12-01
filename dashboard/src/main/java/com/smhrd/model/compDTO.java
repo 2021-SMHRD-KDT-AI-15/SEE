@@ -1,4 +1,4 @@
-package model;
+package com.smhrd.model;
 
 public class compDTO {
 	private String comp_name;

@@ -1,4 +1,4 @@
-package model;
+package com.smhrd.model;
 
 public class jobDTO {
 	private String quarter;
