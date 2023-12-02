@@ -58,11 +58,12 @@
             scales : {
                x : {
                   stacked : true,
-                  beginAtZero : true
+                  beginAtZero : true,
                },
                y : {
                   stacked : true,
-                  beginAtZero : true
+                  beginAtZero : true,
+                  display : false
                }
             }
          }

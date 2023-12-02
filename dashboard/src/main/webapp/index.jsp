@@ -68,7 +68,7 @@ table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
+/**/
 #ns1 {
 	width: 380;
 	display: block;
@@ -108,17 +108,41 @@ table {
 	white-space: nowrap;
 	overflow: hidden;
 }
+#span1 {
+	width: 200px;
+	height: 10px;
+	background-color: rgba(54, 162, 235, 0.2);
+}
+
+#span2 {
+	width: 100px;
+	height: 10px;
+	background-color: rgba(75, 192, 192, 0.2);
+}
+
+#span3 {
+	width: 100px;
+	height: 10px;
+	background-color: rgba(153, 102, 255, 0.2);
+}
+.title{
+font-size : 14px;
+}
+.head{
+font-size : 20px;
+}
 </style>
 </head>
 <body>
 	<div id="header">
-		<h2>광주광역시</h2>
+		<h2 class="head">광주광역시</h2>
+		<hr>
 	</div>
 	<div id="full">
 		<div id="left">
 			<div id="comp"></div>
 			<div>
-				인구현황
+				<span class="title">인구현황</span><br>
 				<button id="dg" onclick="getdongData()">동구</button>
 				<button id="sg" onclick="getseoData()">서구</button>
 				<button id="ng" onclick="getnamData()">남구</button>
@@ -129,6 +153,9 @@ table {
 
 				</div>
 			</div>
+			<p> </p>
+			<p> </p>
+			<span class="title">일자리</span><br>
 			<div id="job">
 				<table id="general" border="1" width="510">
 					<tr>
@@ -158,7 +185,10 @@ table {
 				</table>
 				<table id="young" border="1" width="510">
 					<tr>
-						<td rowspan="2" width="65">청년</td>
+						<td rowspan="4" width="65">
+						청년
+						<a href="https://gjyouthcenter.kr/index.do?contentId=294"><button>고용정책</button></a>
+						</td>
 						<td rowspan="2">청년목표</td>
 						<td>2분기</td>
 						<td>3분기</td>
@@ -171,8 +201,7 @@ table {
 						<td id="y_goal2" width=50></td>
 					</tr>
 					<tr>
-						<td rowspan="2"><a
-							href="https://gjyouthcenter.kr/index.do?contentId=294">고용정책</a></td>
+						
 						<td rowspan="2">청년취업자</td>
 						<td>2분기</td>
 						<td>3분기</td>
@@ -186,7 +215,10 @@ table {
 				</table>
 				<table id="old" border="1" width="510">
 					<tr>
-						<td rowspan="2" width="65">노인</td>
+						<td rowspan="4" width="65">
+						노인
+						<a href="https://gjsenior.kr/news"><button>고용정책</button></a>
+						</td>
 						<td rowspan="2">노인목표</td>
 						<td>2분기</td>
 						<td>3분기</td>
@@ -199,7 +231,7 @@ table {
 						<td id="o_goal2" width=50></td>
 					</tr>
 					<tr>
-						<td rowspan="2"><a href="https://gjsenior.kr/news">고용정책</a></td>
+						
 						<td rowspan="2">노인취업자</td>
 						<td>2분기</td>
 						<td>3분기</td>
@@ -342,6 +374,7 @@ table {
 		</div>
 		<div id="right">
 			<div id="sns"></div>
+		<span class="title">공약현황</span><br>
 			<div id="prom">
 				<table border="1" border-collapse="collapse" width="450">
 					<tr>
@@ -393,34 +426,35 @@ table {
 					</tr>
 				</table>
 			</div>
+			<p> </p>
+			<p> </p>
+			<span class="title">시정 뉴스</span><br>
 			<div id="card">
 				<table border="1" width="461">
-					<tr>
-						<td rowspan="6">
-							<button id="news_btn">보도자료</button> <br>
-							<button id="notice_btn">공지사항</button> <br>
+					<tr colspan=2>
+							<button id="news_btn">보도자료</button> 
+							<button id="notice_btn">공지사항</button>
 							<button id="bul_btn">고시공고</button>
-						</td>
 					</tr>
 
 					<tr>
-						<td id="ns1" width="355"></td>
-						<td id="date1"></td>
+						<td id="ns1" width="400"></td>
+						<td id="date1" width="55"></td>
 					</tr>
 					<tr>
-						<td id="ns2" width="355"></td>
+						<td id="ns2" width="400"></td>
 						<td id="date2"></td>
 					</tr>
 					<tr>
-						<td id="ns3" width="355"></td>
+						<td id="ns3" width="400"></td>
 						<td id="date3"></td>
 					</tr>
 					<tr>
-						<td id="ns4" width="355"></td>
+						<td id="ns4" width="400"></td>
 						<td id="date4"></td>
 					</tr>
 					<tr>
-						<td id="ns5" width="355"></td>
+						<td id="ns5" width="400"></td>
 						<td id="date5"></td>
 					</tr>
 				</table>
