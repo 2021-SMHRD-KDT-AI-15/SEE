@@ -15,7 +15,11 @@
 }
 
 #full {
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	/* width: 300px;
+	gap : 5px;
             height:300px; */
 	
 }
@@ -43,15 +47,21 @@
 #card {
 	width: 450px;
 }
-
+/*
 #left {
-	width: 550px;
+	width: 450px;
 	float: left;
 }
 
 #right {
 	width: 480px;
 	float: right;
+}
+
+
+*/ 
+#center {
+width : 540px;
 }
 
 table {
@@ -206,8 +216,8 @@ table {
 		</div>
 		<div id="center">
 			<div class="map-svg">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="1350" height="448"
-            viewBox="0 0 1800 500" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="520" height="448"
+            viewBox="0 0 800 500" stroke-linecap="round" stroke-linejoin="round">
             <defs>
                 <style>
                     .cls-1 {
