@@ -4,31 +4,31 @@
       function getdongData(){
             
             fetch("pop_dongService")
-             .then(res1 => res1.json())
+             .then(res => res.json())
              .then(json => callBackFunc(json));
       }
       function getseoData(){
             
             fetch("pop_seoService")
-             .then(res1 => res1.json())
+             .then(res => res.json())
              .then(json => callBackFunc(json)); 
       }
       function getnamData(){
             
             fetch("pop_namService")
-             .then(res1 => res1.json())
+             .then(res => res.json())
              .then(json => callBackFunc(json));
       }
       function getbookData(){
             
             fetch("pop_bookService")
-             .then(res1 => res1.json())
+             .then(res => res.json())
              .then(json => callBackFunc(json));
       }
       function getgsgData(){
             
             fetch("pop_gsgService")
-             .then(res1 => res1.json())
+             .then(res => res.json())
              .then(json => callBackFunc(json));
       }
    

@@ -40,7 +40,7 @@ public class jobService extends HttpServlet {
 			out.print(jsonPlace);
 		
 		}catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
 		

@@ -97,6 +97,7 @@
     <div id="full">
         <div id="left">
             <div id="comp"></div>
+            <div id="pop">
             인구현황
 		      <button id ="dg" onclick="getdongData()">동구</button>
 		      <button id ="sg" onclick="getseoData()">서구</button>
@@ -105,11 +106,8 @@
 		      <button id ="gg" onclick="getgsgData()">광산구</button>
 		   	<div id="dgChart">
 		      <canvas id="dongChart" width="510" height="300"></canvas>
-		   	
-            
-            
             </div>
-            
+            </div>
             
             
             <div id="job">
