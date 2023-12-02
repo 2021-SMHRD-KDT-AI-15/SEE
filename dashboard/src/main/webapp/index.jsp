@@ -217,7 +217,7 @@ table {
 		<div id="center">
 			<div class="map-svg">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="520" height="448"
-            viewBox="0 0 800 500" stroke-linecap="round" stroke-linejoin="round">
+            viewBox="-20 -20 800 500" stroke-linecap="round" stroke-linejoin="round">
             <defs>
                 <style>
                     .cls-1 {
