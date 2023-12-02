@@ -1,4 +1,4 @@
-<%@page import="controller.pop_dongService"%>
+<%@page import="com.smhrd.controller.pop_dongService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -112,5 +112,6 @@
 			MyChart = new Chart(ctx,pop_Chart);
 		}
 		</script>
+
 </body>
 </html>

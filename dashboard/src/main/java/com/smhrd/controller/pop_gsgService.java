@@ -16,19 +16,20 @@ import com.smhrd.model.popDTO;
 public class pop_gsgService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		popDAO dao = new popDAO();
-	      ArrayList<popDTO> gsg_list = dao.gsg();
-	            
-	      request.setAttribute("gsg", gsg_list);
-	      Gson gson = new Gson();
-	        String jsonPlace = gson.toJson(gsg_list);
+		ArrayList<popDTO> gsg_list = dao.gsg();
 
-	        response.setContentType("application/json");
-	        response.setCharacterEncoding("utf-8");
-	        PrintWriter out = response.getWriter();
-	        out.print(jsonPlace);
-	
+		request.setAttribute("gsg", gsg_list);
+		Gson gson = new Gson();
+		String jsonPlace = gson.toJson(gsg_list);
+
+		response.setContentType("application/json");
+		response.setCharacterEncoding("utf-8");
+		PrintWriter out = response.getWriter();
+		out.print(jsonPlace);
+
 	}
 
 }

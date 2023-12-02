@@ -16,20 +16,21 @@ import com.smhrd.model.popDTO;
 public class pop_seoService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		popDAO dao = new popDAO();
-	      ArrayList<popDTO> seo_list = dao.seo();
-	      
-	      request.setAttribute("seo", seo_list);
+		ArrayList<popDTO> seo_list = dao.seo();
 
-	        Gson gson = new Gson();
-	        String jsonPlace = gson.toJson(seo_list);
+		request.setAttribute("seo", seo_list);
 
-	        response.setContentType("application/json");
-	          response.setCharacterEncoding("utf-8");
-	        PrintWriter out = response.getWriter();
-	        out.print(jsonPlace);
-	
+		Gson gson = new Gson();
+		String jsonPlace = gson.toJson(seo_list);
+
+		response.setContentType("application/json");
+		response.setCharacterEncoding("utf-8");
+		PrintWriter out = response.getWriter();
+		out.print(jsonPlace);
+
 	}
 
 }
