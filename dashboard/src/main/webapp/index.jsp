@@ -34,6 +34,7 @@
 
 #job {
 	width: 450px;
+	text-align : center;
 }
 
 #sns {
@@ -129,7 +130,7 @@ table {
 font-size : 14px;
 }
 .head{
-font-size : 20px;
+font-size : 25px;
 }
 </style>
 </head>
@@ -416,8 +417,6 @@ font-size : 20px;
 						</td>
 						<td colspan="2"><canvas id="myChart5" width="90" height="50"></canvas>
 						</td>
-
-
 						</td>
 					</tr>
 					<tr>
