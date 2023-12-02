@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,16 +20,13 @@ public class jobService extends HttpServlet {
 		try {
 			jobDAO dao = new jobDAO();
 
-			// DAO의 게시판 목록을 읽어올 수 있는 메소드 호출 -> list()
 			ArrayList<jobDTO> job_list = new ArrayList<>();
 			job_list = dao.list();
 		
 			System.out.println(job_list);
-			
-			// job.jsp로 해당 결과 전달
+
 			request.setAttribute("job", job_list);
-//			RequestDispatcher rd = request.getRequestDispatcher("job.jsp");
-//			rd.forward(request, response);
+
 			Gson gson = new Gson();
 			String jsonPlace = gson.toJson(job_list);
 			

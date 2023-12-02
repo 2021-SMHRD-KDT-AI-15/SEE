@@ -16,24 +16,23 @@ import com.smhrd.model.popDTO;
 public class pop_dongService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		try {
-		popDAO dao = new popDAO();
-	      ArrayList<popDTO> dong_list = dao.dong();
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+			popDAO dao = new popDAO();
+			ArrayList<popDTO> dong_list = dao.dong();
 
-	      request.setAttribute("dong", dong_list);
+			request.setAttribute("dong", dong_list);
 
-	        Gson gson = new Gson();
-	        String jsonPlace = gson.toJson(dong_list);
-	        System.out.println(jsonPlace);
-	        response.setContentType("application/json");
-	        response.setCharacterEncoding("utf-8");
-	        PrintWriter out = response.getWriter();
-	        out.print(jsonPlace);
-		}catch (Exception e) {
-			// TODO: handle exception
-		}
-	
+			Gson gson = new Gson();
+			String jsonPlace = gson.toJson(dong_list);
+			System.out.println(jsonPlace);
+			response.setContentType("application/json");
+			response.setCharacterEncoding("utf-8");
+			PrintWriter out = response.getWriter();
+			out.print(jsonPlace);
+		
+
 	}
 
 }
