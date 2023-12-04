@@ -60,14 +60,14 @@ function callBackFunc_prom(data) {
 				data: [fin_list[0], ing_list[0], hold_list[0]],
 				// ⑦dataset의 배경색(rgba값을 String으로 표현)
 				backgroundColor: [
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
-					'rgba(54, 162, 235, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				// ⑨dataset의 선 두께(Number)
 				borderWidth: 1
 			}]
@@ -107,14 +107,14 @@ function callBackFunc_prom(data) {
 				// ⑥dataset값(Array)
 				data: [fin_list[1], ing_list[1], hold_list[1]],
 				backgroundColor: [
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
-					'rgba(54, 162, 235, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				borderWidth: 1
 			}]
 		},
@@ -153,14 +153,14 @@ function callBackFunc_prom(data) {
 				// ⑥dataset값(Array)
 				data: [fin_list[2], ing_list[2], hold_list[2]],
 				backgroundColor: [
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
-					'rgba(54, 162, 235, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				borderWidth: 1
 			}]
 		},
@@ -196,14 +196,14 @@ function callBackFunc_prom(data) {
 				// ⑥dataset값(Array)
 				data: [fin_list[3], ing_list[3], hold_list[3]],
 				backgroundColor: [
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
-					'rgba(54, 162, 235, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				borderWidth: 1
 			}]
 		},
@@ -239,14 +239,14 @@ function callBackFunc_prom(data) {
 				// ⑥dataset값(Array)
 				data: [fin_list[4], ing_list[4], hold_list[4]],
 				backgroundColor: [
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
-					'rgba(54, 162, 235, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)'],
+					'rgba(54, 162, 235)',
+					'rgba(75, 192, 192)',
+					'rgba(153, 102, 255)'],
 				borderWidth: 1
 			}]
 		},

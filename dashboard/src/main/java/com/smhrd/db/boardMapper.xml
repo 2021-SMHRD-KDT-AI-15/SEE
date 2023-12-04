@@ -13,6 +13,10 @@
 	<select id="card" resultType="com.smhrd.model.cardDTO">
 		select * from cardnews
 	</select>
+	
+	<select id="comp" resultType="com.smhrd.model.compDTO">
+		select * from complain
+	</select>
 
 
 </mapper>

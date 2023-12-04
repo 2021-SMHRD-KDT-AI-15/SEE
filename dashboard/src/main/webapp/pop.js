@@ -55,10 +55,14 @@
          var options = {
             maintainAspectRatio : false,
             responsive : false,
+            
             scales : {
                x : {
                   stacked : true,
                   beginAtZero : true,
+                  ticks: {
+                          color: '#FFFFFF'
+                      }
                },
                y : {
                   stacked : true,
@@ -83,6 +87,7 @@
                } ]
             }
          };   
+         
          if(MyChart){
             MyChart.destroy();
          }
