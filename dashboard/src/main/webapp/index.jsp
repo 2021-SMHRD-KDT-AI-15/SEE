@@ -14,54 +14,70 @@
 	font-family: "GmarketSansTTFMedium";
 	src: url("./asset/font/GmarketSansTTFMedium.woff") format("woff");
 }
-html, body{
-height:100%; 
+
+html, body {
+	height: 100%;
 }
+
 body {
-	height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
 		url(asset/img/gwangju.png) no-repeat center;
 	background-size: cover;
-	height: 1000px;
+	height: 600px;
 	/*
+	height: 100vh;
  opacity : 0.5;
 */
 }
-table{
-border-color : white;
+
+table {
+	border-color: white;
 }
+
+td {
+	padding: 5px;
+}
+
 * {
-	font-size: 11px;
+	font-size: 13px;
 	font-family: "GmarketSansTTFMedium";
 	color: white;
 }
-button{
-color : black;
+
+button {
+	color: white;
+	background-color: transparent;
+	border-color: white;
+	padding: 3px;
 }
 
-
 #full {
-	max-height: 900px;
+	max-height: 600px;
 	max-width: 1920px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 510px 860px 510px;
+	grid-template-rows: 300px 300px 300px;
 	/* width: 300px;
 	gap : 5px;
             height:300px; */
 }
 
 #comp {
-	width: 450px;
+	border-top: 1px solid white;
+	width: 510px;
 }
 
 #pop {
-	width: 450px;
+	width: 510px;
 }
 
 #job {
-	width: 450px;
+	width: 510px;
 	text-align: center;
+}
+
+#general {
+	border-top: 1px solid white;
 }
 
 #sns {
@@ -69,28 +85,32 @@ color : black;
 }
 
 #prom {
-	width: 450px;
+	width: 510px;
 	text-align: center;
 }
 
-#card {
-	width: 450px;
+#prom_table {
+	border-top: 1px solid white;
 }
-/*
+
+#card {
+	width: 510px;
+}
+
 #left {
-	width: 450px;
 	float: left;
 }
 
 #right {
-	width: 480px;
 	float: right;
 }
 
-
-*/
 #center {
-	width: 540px;
+	width: 600px;
+}
+
+#wheather {
+	float: right;
 }
 
 table {
@@ -160,11 +180,12 @@ table {
 }
 
 .date {
-	font-size: 8px;
+	font-size: 10px;
 }
 
 .title {
-	font-size: 14px;
+	width: 510px;
+	font-size: 18px;
 }
 
 .head {
@@ -174,12 +195,28 @@ table {
 #prom_btn {
 	float: right;
 }
+
+#logo {
+	align: center;
+}
+
+#news_table {
+	border-top: 1px solid white;
+}
+
+#dongChart {
+	border-top: 1px solid white;
+}
+
+.job_btn {
+	font-size: 11px;
+}
 </style>
 </head>
 <body>
 	<div class="bgimg"></div>
-	<span><img width="25px" src="asset/img/로고.svg"></span>	
-	<span class="head">광주광역시</span>
+	<span id="logo"><img width="25px" src="asset/img/로고.svg">
+		<span class="head">광주광역시</span> </span>
 	</div>
 	<div id="body">
 		<div id="header">
@@ -188,12 +225,14 @@ table {
 				<div id="left">
 
 					<div>
-						<span class="title">인구현황</span><br>
-						<button id="dg" onclick="getdongData()">동구</button>
-						<button id="sg" onclick="getseoData()">서구</button>
-						<button id="ng" onclick="getnamData()">남구</button>
-						<button id="bg" onclick="getbookData()">북구</button>
-						<button id="gg" onclick="getgsgData()">광산구</button>
+						<div class="title">
+							인구현황
+							<button id="dg" onclick="getdongData()">동구</button>
+							<button id="sg" onclick="getseoData()">서구</button>
+							<button id="ng" onclick="getnamData()">남구</button>
+							<button id="bg" onclick="getbookData()">북구</button>
+							<button id="gg" onclick="getgsgData()">광산구</button>
+						</div>
 						<div id="dgChart">
 							<canvas id="dongChart" width="510" height="300"></canvas>
 
@@ -201,7 +240,7 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<span class="title">일자리</span><br>
+					<div class="title">일자리</div>
 					<div id="job">
 						<table id="general" border="1px" width="510">
 							<tr>
@@ -232,7 +271,8 @@ table {
 						<table id="young" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">청년 <a
-									href="https://gjyouthcenter.kr/index.do?contentId=294"><button>고용정책</button></a>
+									href="https://gjyouthcenter.kr/index.do?contentId=294"><button
+											class="job_btn">고용정책</button></a>
 								</td>
 								<td rowspan="2" width="100">청년목표</td>
 								<td>2분기</td>
@@ -261,7 +301,7 @@ table {
 						<table id="old" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">노인 <a
-									href="https://gjsenior.kr/news"><button>고용정책</button></a>
+									href="https://gjsenior.kr/news"><button class="job_btn">고용정책</button></a>
 								</td>
 								<td rowspan="2" width="100">노인목표</td>
 								<td>2분기</td>
@@ -293,7 +333,7 @@ table {
 				<div id="center">
 					<div id="wheather">
 						<div
-							style="background-color: rgb(81, 83, 85); padding: 40px; color: #fff; width:240px; height: 60px">
+							style="background-color: rgb(81, 83, 85); padding: 40px; color: #fff; width: 220px; height: 40px; border-radius: 20px;">
 							<div style="float: left;">
 								<div class="weather_icon">
 									<img src="" id="img"></img>
@@ -302,14 +342,14 @@ table {
 							<br>
 
 							<div
-								style="float: right; margin: -5px 0px 0px 60px; font-size: 11pt">
+								style="float: right; margin: -25px 0px 0px 60px; font-size: 11pt">
 								<div class="temp_min"></div>
 								<div class="temp_max"></div>
 								<div class="humidity"></div>
 								<div class="wind"></div>
 								<div class="cloud"></div>
 							</div>
-							<div style="float: left; margin-top: -45px;">
+							<div style="float: left; margin-top: -80px;">
 								<span class="weather_description" style="font-size: 30pt"></span>
 								<span class="current_temp" style="font-size: 30pt"></span>
 								<div class="city" style="font-size: 13pt"></div>
@@ -438,73 +478,9 @@ table {
 					</div>
 					<div class="map-svg">
 						<svg xmlns="http://www.w3.org/2000/svg" version="1.2"
-							baseProfile="tiny" width="520" height="448"
-							viewBox="-20 -20 800 500" stroke-linecap="round"
+							baseProfile="tiny" width="800" height="500"
+							viewBox="-150 50 1000 500" stroke-linecap="round"
 							stroke-linejoin="round">
-            <defs>
-                <style>
-.cls-1 {
-	fill: #d3d3d3;
-}
-
-.cls-2 {
-	font-size: 16px;
-}
-
-.top text, .top tspan {
-	fill: #fff;
-	display: block;
-}
-
-.top:hover text, .top:hover tspan {
-	fill: #333;
-}
-
-.top.top01 .cls-1 {
-	fill: #4e4eea
-}
-
-.top.top02 .cls-1 {
-	fill: #605ccc
-}
-
-.top.top03 .cls-1 {
-	fill: #5c6dda
-}
-
-.top.top04 .cls-1 {
-	fill: #6591c3
-}
-
-.top.top05 .cls-1 {
-	fill: #526e88
-}
-
-.group {
-	cursor: pointer;
-}
-
-.group:hover path {
-	transition: fill .2s;
-}
-
-.group:hover .cls-1 {
-	fill: #eab605;
-}
-
-.group:active .cls-1 {
-	fill: red;
-}
-
-.group.select .cls-1 {
-	fill: #eab605;
-}
-
-.group.select text, .group.select tspan {
-	fill: #333;
-}
-</style>
-            </defs>
             <g id="hangjeongdong_광주광역시">
                 <g ng-repeat="pop_rank in dong_pop_rank_list" ng-switch
 								on="pop_rank.HJD">
@@ -569,15 +545,23 @@ table {
 				</div>
 				<div id="right">
 					<div id="sns"></div>
-					<span class="title">민원현황</span><br>
+					<div class="title">민원현황</div>
 					<div id="comp">
-						<canvas id="comp_chart" width="450" height="250"></canvas>
+						<canvas id="comp_chart" width="500" height="250"></canvas>
 					</div>
-					<span class="title">공약현황</span> <a
-						href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"><button
-							id="prom_btn">상세보기</button></a><br>
+					<div class="title">
+						공약현황
+						<div width="30px">
+							<a
+								href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
+								target="_blank">
+								<button id="prom_btn">상세보기</button>
+							</a>
+						</div>
+					</div>
 					<div id="prom">
-						<table border="1" border-collapse="collapse" width="450">
+						<table border="1" border-collapse="collapse" width="500"
+							id="prom_table">
 							<tr>
 								<td id="name1" colspan="2"></td>
 								<td id="name2" colspan="2"></td>
@@ -628,9 +612,9 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<span class="title">시정 뉴스</span><br>
+					<div class="title">시정뉴스</div>
 					<div id="card">
-						<table border="1" width="461">
+						<table id="news_table" border="1" width="510">
 							<tr colspan=2>
 								<button id="news_btn">보도자료</button>
 								<button id="notice_btn">공지사항</button>
@@ -638,23 +622,23 @@ table {
 							</tr>
 
 							<tr>
-								<td id="ns1" width="400"></td>
-								<td class="date" id="date1" width="55"></td>
+								<td id="ns1"></td>
+								<td class="date" id="date1" width="60"></td>
 							</tr>
 							<tr>
-								<td id="ns2" width="400"></td>
+								<td id="ns2"></td>
 								<td class="date" id="date2"></td>
 							</tr>
 							<tr>
-								<td id="ns3" width="400"></td>
+								<td id="ns3"></td>
 								<td class="date" id="date3"></td>
 							</tr>
 							<tr>
-								<td id="ns4" width="400"></td>
+								<td id="ns4"></td>
 								<td class="date" id="date4"></td>
 							</tr>
 							<tr>
-								<td id="ns5" width="400"></td>
+								<td id="ns5"></td>
 								<td class="date" id="date5"></td>
 							</tr>
 						</table>
@@ -675,5 +659,6 @@ table {
 		<script src="asset/js/modal.js"></script>
 		<script src="asset/js/wheater.js"></script>
 		<link rel="stylesheet" href="asset/css/modal.css">
+		<link rel="stylesheet" href="asset/css/map.css">
 </body>
 </html>

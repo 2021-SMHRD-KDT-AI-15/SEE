@@ -79,11 +79,11 @@
                datasets : [ {
                   label : '남자',
                   data : male,
-                  backgroundColor : [ 'rgba(124,181,236,0.2)' ]
+                  backgroundColor : [ 'rgba(124,181,236)' ]
                }, {
                   label : '여자',
                   data : female,
-                  backgroundColor : [ 'rgba(255, 99, 132, 0.2)' ]
+                  backgroundColor : [ 'rgba(255, 99, 132)' ]
                } ]
             }
          };   

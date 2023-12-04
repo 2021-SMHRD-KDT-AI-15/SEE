@@ -45,8 +45,11 @@ function callBackFunc_comp(data) {
 					grid: {
 						display: false,
 					},
+					x: {
 					ticks: {
-						color: '#FFFFFF'},
+						color: '#FFFFFF'
+						}
+					},
 					y: {
 						beginAtZero: true,
 						display: false,

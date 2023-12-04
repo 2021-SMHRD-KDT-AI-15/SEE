@@ -43,9 +43,9 @@ function callBackFunc_prom(data) {
 
 
 	// 차트를 그럴 영역을 dom요소로 가져온다.
-	var chartArea = document.getElementById('myChart1').getContext('2d');
+	const chartArea1 = document.getElementById('myChart1').getContext('2d');
 	// 차트를 생성한다. 
-	var myChart1 = new Chart(chartArea, {
+	const myChart1 = new Chart(chartArea1, {
 		// ①차트의 종류(String)
 		type: 'bar',
 		// ②차트의 데이터(Object)
@@ -95,8 +95,8 @@ function callBackFunc_prom(data) {
 	});
 
 
-	var chartArea = document.getElementById('myChart2').getContext('2d');
-	var myChart2 = new Chart(chartArea, {
+	const chartArea2 = document.getElementById('myChart2').getContext('2d');
+	const myChart2 = new Chart(chartArea2, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
@@ -110,7 +110,7 @@ function callBackFunc_prom(data) {
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
 					'rgba(153, 102, 255)'],
-				// ⑧dataset의 선 색(rgba값을 String으로 표현)
+				// ⑧dataset의cocon색(rgba값을 String으로 표현)
 				borderColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
@@ -130,10 +130,8 @@ function callBackFunc_prom(data) {
 				y: {
 					beginAtZero: true,
 					display: false,
-					stacked: true,
 				},
 				x: {
-					stacked: true,
 					display: false,
 				}
 			}
@@ -141,8 +139,8 @@ function callBackFunc_prom(data) {
 	});
 
 
-	var chartArea = document.getElementById('myChart3').getContext('2d');
-	var myChart3 = new Chart(chartArea, {
+	const chartArea3 = document.getElementById('myChart3').getContext('2d');
+	const myChart3 = new Chart(chartArea3, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
@@ -153,14 +151,14 @@ function callBackFunc_prom(data) {
 				// ⑥dataset값(Array)
 				data: [fin_list[2], ing_list[2], hold_list[2]],
 				backgroundColor: [
-					'rgba(54, 162, 235)',
-					'rgba(75, 192, 192)',
-					'rgba(153, 102, 255)'],
+					'rgba(54, 162, 235,1)',
+					'rgba(75, 192, 192,1)',
+					'rgba(153, 102, 255,1)'],
 				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
-					'rgba(54, 162, 235)',
-					'rgba(75, 192, 192)',
-					'rgba(153, 102, 255)'],
+					'rgba(54, 162, 235,1)',
+					'rgba(75, 192, 192,1)',
+					'rgba(153, 102, 255,1)'],
 				borderWidth: 1
 			}]
 		},
@@ -184,8 +182,8 @@ function callBackFunc_prom(data) {
 		}
 	});
 
-	var chartArea = document.getElementById('myChart4').getContext('2d');
-	var myChart4 = new Chart(chartArea, {
+	const chartArea4 = document.getElementById('myChart4').getContext('2d');
+	const myChart4 = new Chart(chartArea4, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
@@ -227,8 +225,8 @@ function callBackFunc_prom(data) {
 		}
 	});
 
-	var chartArea = document.getElementById('myChart5').getContext('2d');
-	var myChart3 = new Chart(chartArea, {
+	const chartArea5 = document.getElementById('myChart5').getContext('2d');
+	const myChart5 = new Chart(chartArea5, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.cls-1 {
+	fill: #d3d3d3;
+}
+
+.cls-2 {
+	font-size: 16px;
+}
+
+.top text, .top tspan {
+	fill: #fff;
+	display: block;
+}
+
+.top:hover text, .top:hover tspan {
+	fill: #333;
+}
+
+.top.top01 .cls-1 {
+	fill: #4e4eea
+}
+
+.top.top02 .cls-1 {
+	fill: #605ccc
+}
+
+.top.top03 .cls-1 {
+	fill: #5c6dda
+}
+
+.top.top04 .cls-1 {
+	fill: #6591c3
+}
+
+.top.top05 .cls-1 {
+	fill: #526e88
+}
+
+.group {
+	cursor: pointer;
+}
+
+.group:hover path {
+	transition: fill .2s;
+}
+
+.group:hover .cls-1 {
+	fill: #eab605;
+}
+
+.group:active .cls-1 {
+	fill: red;
+}
+
+.group.select .cls-1 {
+	fill: #eab605;
+}
+
+.group.select text, .group.select tspan {
+	fill: #333;
+}
