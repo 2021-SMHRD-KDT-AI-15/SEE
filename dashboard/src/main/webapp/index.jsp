@@ -11,8 +11,8 @@
 <title>Document</title>
 <style>
 @font-face {
-	font-family: "GmarketSansTTFMedium";
-	src: url("./asset/font/GmarketSansTTFMedium.woff") format("woff");
+	font-family: "bg_Medium";
+	src: url("./asset/font/bg_Medium.woff") format("woff");
 }
 
 html, body {
@@ -45,7 +45,7 @@ td {
 
 * {
 	font-size: 13px;
-	font-family: "GmarketSansTTFMedium";
+	font-family: "bg_Medium";
 	color: white;
 }
 
@@ -55,13 +55,17 @@ button {
 	border-color: white;
 	padding: 3px;
 }
+button : active {
+background-color : white;
+color : black;
+}
 
 #full {
 	max-height: 600px;
 	max-width: 1920px;
 	display: grid;
 	grid-template-columns: 510px 860px 510px;
-	grid-template-rows: 300px 300px 300px;
+	grid-template-rows: 400px 300px 300px;
 	/* width: 300px;
 	gap : 5px;
             height:300px; */
@@ -92,7 +96,7 @@ button {
 }
 
 table {
-	border: 1px solid black;
+	border: 1px solid #585858;
 	border-collapse: collapse;
 }
 /**/
@@ -122,6 +126,7 @@ table {
 
 .title {
 	width: 510px;
+	height : 30px;
 	font-size: 18px;
 }
 
@@ -133,20 +138,31 @@ table {
 	align: center;
 }
 
+#logo>a {
+	text-decoration: none;
+}
+
 #dongChart {
 	border-top: 1px solid white;
 }
 
 .title_md, .binding {
-	color: black;
+	color: #585858;
 	font-size : 20px;
+	}
+#unit {
+	float: right;
+}
+
+#tit_job {
+	width: 450px;
 }
 </style>
 </head>
 <body>
 	<div class="bgimg"></div>
-	<span id="logo"><img width="25px" src="asset/img/로고.svg">
-		<span class="head">광주광역시</span> </span>
+	<span id="logo"><a href="index.jsp"><img width="25px"
+			src="asset/img/로고.svg"> <span class="head">광주광역시</span></a></span>
 	</div>
 	<div id="body">
 		<div id="header">
@@ -157,11 +173,13 @@ table {
 					<div>
 						<div class="title">
 							인구현황
+							<div id="pop_btn">
 							<button id="dg" onclick="getdongData()">동구</button>
 							<button id="sg" onclick="getseoData()">서구</button>
 							<button id="ng" onclick="getnamData()">남구</button>
 							<button id="bg" onclick="getbookData()">북구</button>
 							<button id="gg" onclick="getgsgData()">광산구</button>
+							</div>
 						</div>
 						<div id="dgChart">
 							<canvas id="dongChart" width="510" height="300"></canvas>
@@ -170,15 +188,18 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title">일자리</div>
+					<div class="title" id="tit_job">일자리</div>
+					<div id="unit">단위 (목표 : 명, 취업자 수 : 천명)</div>
 					<div id="job">
 						<table id="general" border="1px" width="510">
 							<tr>
 								<td rowspan="4" width="65">일반</td>
-								<td rowspan="2" width="100">일반목표</td>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png"><br>
+								<br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4">일반고용률</td>
+								<td rowspan="4"><img src="asset/img/rise.png"><br>
+								<br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
@@ -187,7 +208,8 @@ table {
 								<td id="g_goal2"></td>
 							</tr>
 							<tr>
-								<td rowspan="2">일반취업자</td>
+								<td rowspan="2"><img src="asset/img/opportunity.png"><br>
+								<br>취업자 수</td>
 								<td width="50">2분기</td>
 								<td width="50">3분기</td>
 								<td id="g_rate1" rowspan="2"></td>
@@ -201,13 +223,15 @@ table {
 						<table id="young" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">청년 <a
-									href="https://gjyouthcenter.kr/index.do?contentId=294"><button
+									href="https://gjyouthcenter.kr/index.do?contentId=294"><br><span height="1px"></span><br></span><button
 											class="job_btn">고용정책</button></a>
 								</td>
-								<td rowspan="2" width="100">청년목표</td>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png"><br>
+								<br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4">청년고용률</td>
+								<td rowspan="4"><img src="asset/img/rise.png"><br>
+								<br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
@@ -217,7 +241,8 @@ table {
 							</tr>
 							<tr>
 
-								<td rowspan="2">청년취업자</td>
+								<td rowspan="2"><img src="asset/img/opportunity.png"><br>
+								<br>취업자 수</td>
 								<td>2분기</td>
 								<td>3분기</td>
 								<td id="y_rate1" rowspan="2"></td>
@@ -231,12 +256,14 @@ table {
 						<table id="old" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">노인 <a
-									href="https://gjsenior.kr/news"><button class="job_btn">고용정책</button></a>
+									href="https://gjsenior.kr/news"><br><span height="1px"></span><br><button class="job_btn">고용정책</button></a>
 								</td>
-								<td rowspan="2" width="100">노인목표</td>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png"><br>
+								<br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4">노인고용률</td>
+								<td rowspan="4"><img src="asset/img/rise.png"><br>
+								<br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
@@ -246,7 +273,8 @@ table {
 							</tr>
 							<tr>
 
-								<td rowspan="2">노인취업자</td>
+								<td rowspan="2"><img src="asset/img/opportunity.png"><br>
+								<br>취업자 수</td>
 								<td>2분기</td>
 								<td>3분기</td>
 								<td id="o_rate1" rowspan="2"></td>
@@ -287,7 +315,7 @@ table {
 					</div>
 					<div id="modal-box-dg">
 						<div id="modal-contents">
-							<a href="#none" class="btn-close">X</a>
+							<a href="#none" class="btn-close"><img src="asset/img/icon_x.png"></a>
 							<h2 class="title_md">
 								<span class="binding">동구</span> 통계 <span
 									class="binding">(2023년 12월 기준)</span>
@@ -311,7 +339,7 @@ table {
 					</div>
 					<div id="modal-box-sg">
 						<div id="modal-contents">
-							<a href="#none" class="btn-close">X</a>
+							<a href="#none" class="btn-close"><img src="asset/img/icon_x.png"></a>
 							<h2 class="title_md">
 								<span class="binding">서구</span> 통계 <span
 									class="binding">(2023년 12월 기준)</span>
@@ -335,7 +363,7 @@ table {
 					</div>
 					<div id="modal-box-ng">
 						<div id="modal-contents">
-							<a href="#none" class="btn-close">X</a>
+							<a href="#none" class="btn-close"><img src="asset/img/icon_x.png"></a>
 							<h2 class="title_md">
 								<span class="binding">남구</span> 통계 <span
 									class="binding">(2023년 12월 기준)</span>
@@ -359,7 +387,7 @@ table {
 					</div>
 					<div id="modal-box-bg">
 						<div id="modal-contents">
-							<a href="#none" class="btn-close">X</a>
+							<a href="#none" class="btn-close"><img src="asset/img/icon_x.png"></a>
 							<h2 class="title_md">
 								<span class="binding">북구</span> 통계 <span
 									class="binding">(2023년 12월 기준)</span>
@@ -383,7 +411,7 @@ table {
 					</div>
 					<div id="modal-box-gg">
 						<div id="modal-contents">
-							<a href="#none" class="btn-close">X</a>
+							<a href="#none" class="btn-close"><img src="asset/img/icon_x.png"></a>
 							<h2 class="title_md">
 								<span class="binding">광산구</span> 통계 <span
 									class="binding">(2023년 12월 기준)</span>
@@ -475,19 +503,26 @@ table {
 				</div>
 				<div id="right">
 					<div id="sns"></div>
-					<div class="title">민원현황</div>
+					<div class="title">
+						민원현황 <a
+							href="https://baroeungdap.gwangju.go.kr/contentsView.do?menuId=baroeungda0210101000"
+							target="_blank">
+							<div>
+								<button id="comp_btn">민원접수</button>
+							</div>
+						</a>
+					</div>
 					<div id="comp">
 						<canvas id="comp_chart" width="500" height="250"></canvas>
 					</div>
 					<div class="title">
-						공약현황
-						<div width="30px">
-							<a
-								href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
-								target="_blank">
+						공약현황 <a
+							href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
+							target="_blank">
+							<div>
 								<button id="prom_btn">상세보기</button>
-							</a>
-						</div>
+							</div>
+						</a>
 					</div>
 					<div id="prom">
 						<table border="1" border-collapse="collapse" width="500"
@@ -552,23 +587,23 @@ table {
 							</tr>
 
 							<tr>
-								<td id="ns1"></td>
-								<td class="date" id="date1" width="60"></td>
+								<td id="ns1" width="420"></td>
+								<td class="date" id="date1" width="75"></td>
 							</tr>
 							<tr>
-								<td id="ns2"></td>
+								<td id="ns2" width="420"></td>
 								<td class="date" id="date2"></td>
 							</tr>
 							<tr>
-								<td id="ns3"></td>
+								<td id="ns3" width="420"></td>
 								<td class="date" id="date3"></td>
 							</tr>
 							<tr>
-								<td id="ns4"></td>
+								<td id="ns4" width="420"></td>
 								<td class="date" id="date4"></td>
 							</tr>
 							<tr>
-								<td id="ns5"></td>
+								<td id="ns5" width="420"></td>
 								<td class="date" id="date5"></td>
 							</tr>
 						</table>

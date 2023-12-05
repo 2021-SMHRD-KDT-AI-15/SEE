@@ -55,7 +55,7 @@
          var options = {
             maintainAspectRatio : false,
             responsive : false,
-            lagel : {
+            label : {
 				color: '#FFFFFF'
 			},
             scales : {

@@ -2,3 +2,10 @@
 #pop {
 	width: 510px;
 }
+#pop_btn{
+	float: right;
+}
+#dg, #sg, #ng, #bg, #gg{
+	height: 30px;
+	padding: 3px;
+}
