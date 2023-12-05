@@ -16,8 +16,7 @@ import com.smhrd.model.compDTO;
 public class compService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			compDAO dao = new compDAO();
 
@@ -45,6 +44,7 @@ public class compService extends HttpServlet {
 		} catch (Exception e) {
 
 		}
-
+	
 	}
+
 }

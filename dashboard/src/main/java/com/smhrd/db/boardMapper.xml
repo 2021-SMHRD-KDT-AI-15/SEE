@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.smhrd.db.boardMapper">
-	
-	<select id="comp" resultType="com.smhrd.model.compDTO">
-	select * from complain
+<mapper namespace="com.smhrd.model.cardDAO">
+
+	<select id="job" resultType="com.smhrd.model.jobDTO">
+		select * from job
 	</select>
 
+	<select id="prom" resultType="com.smhrd.model.promDTO">
+		select * from promise
+	</select>
 
-
-
+	<select id="card" resultType="com.smhrd.model.cardDTO">
+		select * from cardnews
+	</select>
+	
+	<select id="comp" resultType="com.smhrd.model.compDTO">
+		select * from complain
+	</select>
 
 
 </mapper>

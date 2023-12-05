@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#prom {
+	width: 510px;
+	text-align: center;
+}
+
+#prom_table {
+	border-top: 1px solid white;
+}
+
+#prom_btn {
+	float: right;
+}

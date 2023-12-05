@@ -16,5 +16,6 @@
   </environments>
   <mappers>
     <mapper resource="com/smhrd/db/boardMapper.xml"/>
+    <mapper resource="com/smhrd/db/pop-board.xml"/>
   </mappers>
 </configuration>

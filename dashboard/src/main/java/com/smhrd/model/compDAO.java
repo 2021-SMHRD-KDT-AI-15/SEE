@@ -8,8 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import com.smhrd.db.SqlSessionManager;
 
 public class compDAO {
-	
-	SqlSessionFactory sqlSessionFactory = SqlSessionManager.getFactory();
+SqlSessionFactory sqlSessionFactory = SqlSessionManager.getFactory();
 	
 	ArrayList<compDTO> comp_list = new ArrayList<compDTO>();
 	
@@ -22,5 +21,7 @@ public class compDAO {
 		
 		return comp_list;
 	}
+
+	
 
 }

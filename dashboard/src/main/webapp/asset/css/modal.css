@@ -1,0 +1,121 @@
+@charset "UTF-8";
+table.vertic-table {
+   margin-top: 20px;
+   width: 100%;
+}
+
+table.vertic-table tbody {
+   border-top: 1px solid #585858;
+}
+
+table.vertic-table tbody tr th {
+   width: 100px;
+   background: #444;
+   color: #fff;
+   padding: 5px;
+   text-align: center;
+   font-size: 1.3rem;
+   font-weight: 600;
+   border-bottom: 1px solid #585858;
+   border-right: 1px solid #585858;
+   height: 40px;
+   word-break: keep-all;
+}
+
+table.vertic-table tbody tr td {
+   padding: 5px 15px;
+   font-size: 1.3rem;
+   border-bottom: 1px solid #585858;
+   height: 40px;
+   word-break: keep-all;
+   color: #fff;
+   text-align: right;
+}
+
+table.vertic-table tbody tr td:last-child {
+   border-right: 1px solid #585858;
+}
+
+#modal-box-dg {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(255, 255, 255, 0.8);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#modal-box-sg {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(255, 255, 255, 0.8);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#modal-box-ng {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(255, 255, 255, 0.8);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#modal-box-bg {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(255, 255, 255, 0.8);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#modal-box-gg {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(255, 255, 255, 0.8);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#modal-contents {
+   background-color: #fff;
+   width: 350px;
+   border-radius: 10px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(630 370);
+   padding: 30px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+   text-align: center;
+}
+
+.btn-close {
+   position: absolute;
+   top: 15px;
+   right: 15px;
+}

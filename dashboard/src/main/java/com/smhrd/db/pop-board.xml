@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.db.pop-board">
+
+ 	<select id="dong" resultType="com.smhrd.model.popDTO">
+		SELECT pop_dong,pop_male,pop_female FROM population where pop_gu='동구'
+	</select>
+	<select id="seo" resultType="com.smhrd.model.popDTO">
+		SELECT pop_dong,pop_male,pop_female FROM population where pop_gu='서구'
+	</select>
+	<select id="nam" resultType="com.smhrd.model.popDTO">
+		SELECT pop_dong,pop_male,pop_female FROM population where pop_gu='남구'
+	</select>
+	<select id="book" resultType="com.smhrd.model.popDTO">
+		SELECT pop_dong,pop_male,pop_female FROM population where pop_gu='북구'
+	</select>
+	<select id="gsg" resultType="com.smhrd.model.popDTO">
+		SELECT pop_dong,pop_male,pop_female FROM population where pop_gu='광산구'
+	</select>
+	
+</mapper>
