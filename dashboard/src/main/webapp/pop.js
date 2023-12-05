@@ -37,9 +37,6 @@
       let MyChart;
       
       function callBackFunc(data){
-         
-         console.log(data)
-         
          var name = [];
          var male = [];
          var female = [];
@@ -55,9 +52,17 @@
          var options = {
             maintainAspectRatio : false,
             responsive : false,
-            label : {
-				color: '#FFFFFF'
-			},
+            plugins: {
+           legend: {   
+                align: 'center',
+                labels: {
+                   color: 'white',
+                    font: {
+                       weight: 'bold'
+                    },
+                }
+            }
+        },
             scales : {
                x : {
                   stacked : true,

@@ -13,16 +13,12 @@ var date_list = new Array();
 
 function callBackFunc_card(data) {
 	
-	console.log(data)
-	
 	for (let i = 0; i < 5; i++) {
 		news_list.push(data[i].news_tit)
 		notice_list.push(data[i].notice_tit)
 		bul_list.push(data[i].bulletin_tit)
 		date_list.push(data[i].cardnews_date)
 	}
-	
-	console.log(news_list[0])
 	
 	document.getElementById("ns1").textContent = news_list[0];
 	document.getElementById("ns2").textContent = news_list[1];

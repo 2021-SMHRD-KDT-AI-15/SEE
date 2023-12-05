@@ -59,7 +59,8 @@ button : active {
 background-color : white;
 color : black;
 }
-
+button+button{
+}
 #full {
 	max-height: 600px;
 	max-width: 1920px;
@@ -73,10 +74,11 @@ color : black;
 
 #left {
 	float: left;
+	margin-left : 20px;
 }
 
 #center {
-	width: 600px;
+	width: 800px;
 }
 
 #right {
@@ -128,6 +130,7 @@ table {
 	width: 510px;
 	height : 30px;
 	font-size: 18px;
+	margin-top : 5px;
 }
 
 .head {
@@ -155,7 +158,11 @@ table {
 }
 
 #tit_job {
-	width: 450px;
+	width: 510px;
+}
+.a_btn{
+height : 30px;
+font-size: 15px;
 }
 </style>
 </head>
@@ -188,8 +195,10 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title" id="tit_job">일자리</div>
-					<div id="unit">단위 (목표 : 명, 취업자 수 : 천명)</div>
+					<div class="title" id="tit_job">
+					일자리
+					<div id="unit" margin-top="10px">단위 (목표 : 명, 취업자 수 : 천명)</div>
+					</div>
 					<div id="job">
 						<table id="general" border="1px" width="510">
 							<tr>
@@ -435,9 +444,9 @@ table {
 					</div>
 					<div class="map-svg">
 						<svg xmlns="http://www.w3.org/2000/svg" version="1.2"
-							baseProfile="tiny" width="800" height="500"
-							viewBox="-150 50 1000 500" stroke-width="1"
-							stroke-linecap="round" stroke-linejoin="round">
+                     baseProfile="tiny" width="800" height="600"
+                     viewBox="-150 -25 1000 500" stroke-width="1" stroke-linecap="round"
+                     stroke-linejoin="round">
             <g id="hangjeongdong_광주광역시">
                 <g ng-repeat="pop_rank in dong_pop_rank_list" ng-switch
 								on="pop_rank.HJD">
@@ -504,28 +513,29 @@ table {
 				<div id="right">
 					<div id="sns"></div>
 					<div class="title">
-						민원현황 <a
+						민원현황 
+							<div id="comp_btn">
+						<a
 							href="https://baroeungdap.gwangju.go.kr/contentsView.do?menuId=baroeungda0210101000"
 							target="_blank">
-							<div>
-								<button id="comp_btn">민원접수</button>
-							</div>
+								<button class="a_btn">민원접수</button>
 						</a>
+							</div>
 					</div>
 					<div id="comp">
 						<canvas id="comp_chart" width="500" height="250"></canvas>
 					</div>
 					<div class="title">
-						공약현황 <a
-							href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
+						공약현황 
+							<div id="prom_btn">
+						<a	href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
 							target="_blank">
-							<div>
-								<button id="prom_btn">상세보기</button>
-							</div>
+								<button class="a_btn">상세보기</button>
 						</a>
+							</div>
 					</div>
 					<div id="prom">
-						<table border="1" border-collapse="collapse" width="500"
+						<table border="1" border-collapse="collapse" width="510"
 							id="prom_table">
 							<tr>
 								<td id="name1" colspan="2"></td>
