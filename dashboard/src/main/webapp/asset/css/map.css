@@ -1,10 +1,14 @@
 @charset "UTF-8";
+
 .cls-1 {
-	fill: #d3d3d3;
+	fill: rgb(9, 14, 11);
+	color : white;
 }
 
+
 .cls-2 {
-	font-size: 16px;
+	font-size: 40px;
+	color : white;
 }
 
 .top text, .top tspan {
@@ -15,26 +19,28 @@
 .top:hover text, .top:hover tspan {
 	fill: #333;
 }
-
-.top.top01 .cls-1 {
+/*
+.cls_dg {
 	fill: #4e4eea
 }
 
-.top.top02 .cls-1 {
+.cls_sg {
 	fill: #605ccc
 }
 
-.top.top03 .cls-1 {
+.cls_ng {
 	fill: #5c6dda
 }
 
-.top.top04 .cls-1 {
+.cls_bg {
 	fill: #6591c3
 }
 
-.top.top05 .cls-1 {
+.cls_gsg {
 	fill: #526e88
 }
+*/
+
 
 .group {
 	cursor: pointer;
@@ -45,15 +51,16 @@
 }
 
 .group:hover .cls-1 {
-	fill: #eab605;
+	fill: slateblue;
+	color: white;
 }
 
 .group:active .cls-1 {
-	fill: red;
+	fill: lightsteelblue;
 }
 
 .group.select .cls-1 {
-	fill: #eab605;
+	fill: darkslateblue;
 }
 
 .group.select text, .group.select tspan {

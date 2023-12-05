@@ -26,8 +26,6 @@ public class promservice extends HttpServlet {
 			ArrayList<promDTO> prom_list = new ArrayList<>();
 			prom_list = dao.list();
 
-			System.out.println(prom_list);
-
 			request.setAttribute("prom", prom_list);
 
 			Gson gson = new Gson();

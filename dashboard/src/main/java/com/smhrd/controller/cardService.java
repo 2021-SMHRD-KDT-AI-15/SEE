@@ -26,7 +26,6 @@ public class cardService extends HttpServlet {
 			List<cardDTO> card_list = new ArrayList<>();
 			card_list = dao.list();
 		
-			System.out.println(card_list);
 
 			request.setAttribute("card", card_list);
 

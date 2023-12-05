@@ -55,7 +55,9 @@
          var options = {
             maintainAspectRatio : false,
             responsive : false,
-            
+            lagel : {
+				color: '#FFFFFF'
+			},
             scales : {
                x : {
                   stacked : true,
