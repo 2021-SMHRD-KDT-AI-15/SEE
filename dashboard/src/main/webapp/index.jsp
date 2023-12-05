@@ -62,101 +62,35 @@ button {
             height:300px; */
 }
 
-#comp {
-	border-top: 1px solid white;
-	width: 510px;
+#left {
+	float: left;
 }
-
-#pop {
-	width: 510px;
+#center {
+	width: 600px;
 }
-
-#job {
-	width: 510px;
-	text-align: center;
+#right {
+	float: right;
 }
-
-#general {
-	border-top: 1px solid white;
+#wheather {
+	float: right;
 }
 
 #sns {
 	width: 450px;
 }
 
-#prom {
-	width: 510px;
-	text-align: center;
-}
-
-#prom_table {
-	border-top: 1px solid white;
-}
 
 #card {
 	width: 510px;
 }
 
-#left {
-	float: left;
-}
-
-#right {
-	float: right;
-}
-
-#center {
-	width: 600px;
-}
-
-#wheather {
-	float: right;
-}
 
 table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
 /**/
-#ns1 {
-	width: 380;
-	display: block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
 
-#ns2 {
-	width: 380;
-	display: block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-#ns3 {
-	width: 380;
-	display: block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-#ns4 {
-	width: 380;
-	display: block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-#ns5 {
-	width: 380;
-	display: block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
 
 #span1 {
 	width: 20px;
@@ -192,25 +126,19 @@ table {
 	font-size: 25px;
 }
 
-#prom_btn {
-	float: right;
-}
+
 
 #logo {
 	align: center;
 }
 
-#news_table {
-	border-top: 1px solid white;
-}
+
 
 #dongChart {
 	border-top: 1px solid white;
 }
 
-.job_btn {
-	font-size: 11px;
-}
+
 </style>
 </head>
 <body>
