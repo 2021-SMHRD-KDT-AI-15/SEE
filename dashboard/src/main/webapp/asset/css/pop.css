@@ -5,7 +5,13 @@
 #pop_btn{
 	float: right;
 }
-#dg, #sg, #ng, #bg, #gg{
+#dg, #sg, #ng, #bg{
 	height: 30px;
-	padding: 3px;
+	width: 40px;
+	font-size: 13px;
 }
+ #gg{
+	height: 30px;
+	width: 50px; 
+	font-size: 13px;
+ }
