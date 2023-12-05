@@ -24,8 +24,6 @@ public class compService extends HttpServlet {
 			ArrayList<compDTO> comp_list = new ArrayList<>();
 			comp_list = dao.list();
 
-			System.out.println(comp_list);
-			
 			
 			//ArrayList => JSON
 			Gson gson = new Gson();

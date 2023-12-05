@@ -23,7 +23,6 @@ public class jobService extends HttpServlet {
 			ArrayList<jobDTO> job_list = new ArrayList<>();
 			job_list = dao.list();
 		
-			System.out.println(job_list);
 
 			request.setAttribute("job", job_list);
 
