@@ -29,8 +29,8 @@ function callBackFunc_comp(data) {
 			datasets: [{
 				label: '민원현황',
 				data: cnt_lst,
-				backgroundColor: ['rgba(255, 99, 132)'],
-				borderColor: ['rgba(255, 99, 132)'],
+				backgroundColor: ['rgba(247, 163, 92)'],
+				borderColor: ['rgba(247, 163, 92)'],
 				borderWidth: 1
 			}]
 		},

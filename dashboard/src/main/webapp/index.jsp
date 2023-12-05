@@ -501,6 +501,7 @@ table {
 						<canvas id="comp_chart" width="500" height="250"></canvas>
 					</div>
 					<div class="title">
+					<img src="asset/img/promise.png">
 						공약현황 <a
 							href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
 							target="_blank">
@@ -562,7 +563,7 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title">시정뉴스</div>
+					<div class="title"><img src="asset/img/news.png">시정뉴스</div>
 					<div id="card">
 						<table id="news_table" border="1" width="510">
 							<tr colspan=2>
