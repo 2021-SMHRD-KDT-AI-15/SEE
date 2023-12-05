@@ -1,4 +1,4 @@
-package model;
+package com.smhrd.model;
 
 public class promDTO {
 	private String prom_name;
