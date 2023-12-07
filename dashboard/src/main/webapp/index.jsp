@@ -660,14 +660,14 @@ table {
 								<div class="slider__inner">
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMPVOCEPj9gEWE6l1JJeEXXnf0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지1"></a>
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMMOha9t9ZPj7H+KimZw/+t7f0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지2"></a>
