@@ -61,7 +61,8 @@ function callBackFunc_card(data) {
 	$("#notice_btn").on("click", function() {
 		$("#notice_btn").css({
 			backgroundColor: "white",
-			color: "black"
+			color: "rgb(5, 10, 6)",
+			fontWeight: "bold"
 		})
 		$("#news_btn").css({
 			backgroundColor: "transparent",
@@ -76,7 +77,8 @@ function callBackFunc_card(data) {
 	$("#bul_btn").on("click", function() {
 		$("#bul_btn").css({
 			backgroundColor: "white",
-			color: "black"
+			color: "rgb(6, 11, 8)",
+			fontWeight: "bold"
 		})
 		$("#news_btn").css({
 			backgroundColor: "transparent",
@@ -91,7 +93,8 @@ function callBackFunc_card(data) {
 	$("#news_btn").on("click", function() {
 		$("#news_btn").css({
 			backgroundColor: "white",
-			color: "black"
+			color: "rgb(30, 34, 35)",
+			fontWeight: "bold"
 		})
 		$("#notice_btn").css({
 			backgroundColor: "transparent",
@@ -102,6 +105,5 @@ function callBackFunc_card(data) {
 			color: "white"
 		})
 	})
-
 
 }
