@@ -26,7 +26,6 @@ public class pop_dongService extends HttpServlet {
 
 			Gson gson = new Gson();
 			String jsonPlace = gson.toJson(dong_list);
-			System.out.println(jsonPlace);
 			response.setContentType("application/json");
 			response.setCharacterEncoding("utf-8");
 			PrintWriter out = response.getWriter();
