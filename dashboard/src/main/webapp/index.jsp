@@ -46,7 +46,7 @@ td {
 
 * {
 	font-size: 13px;
-	font-family: "bg_Medium";
+	font-family: "GmarketSansTTFMedium";
 	color: white;
 }
 
