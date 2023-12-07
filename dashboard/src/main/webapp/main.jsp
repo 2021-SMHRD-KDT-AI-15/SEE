@@ -4,8 +4,8 @@
 <%@page import="com.smhrd.controller.pop_dongService"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<link rel="icon" href="asset/img/symbol.png"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>광주광역시 스마트 시정 지원시스템</title>
@@ -646,35 +646,35 @@ table {
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAhKvJKrJ2VNDTT5sfdN4Ozf0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지3"></a>
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAdQEc1DiXZARckyjN4hIVXf0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지4"></a>
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMCrJmB7BbuhqpkqL67xpnhff0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지5"></a>
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1120"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1120" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMElZ5TVBvkRtSyZ41K6bxajf0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지6"></a>
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1123"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1123" target="_blank"><img
 											class="img_news"
 											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMHJwZBQxmJhJ5NFho1AZ2EHf0NdDwnLJgUh7mS2IwFqn"
 											alt="이미지7"></a>
