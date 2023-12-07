@@ -3,9 +3,11 @@
 #comp {
 	border-top: 1px solid white;
 	width: 510px;
+	height: 230px;
 }
 
 #comp_btn {
 	float: right;
 	margin-bottom: -5px;
 }
+
