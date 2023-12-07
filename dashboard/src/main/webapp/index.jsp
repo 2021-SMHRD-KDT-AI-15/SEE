@@ -695,39 +695,19 @@ table {
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1120"><img
 											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMPVOCEPj9gEWE6l1JJeEXXnf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지1"></a>
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMElZ5TVBvkRtSyZ41K6bxajf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지6"></a>
 									</div>
 									<div class="slider">
 										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116"><img
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1123"><img
 											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMMOha9t9ZPj7H+KimZw/+t7f0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지2"></a>
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMHJwZBQxmJhJ5NFho1AZ2EHf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지7"></a>
 									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAhKvJKrJ2VNDTT5sfdN4Ozf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지3"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAdQEc1DiXZARckyjN4hIVXf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지4"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMCrJmB7BbuhqpkqL67xpnhff0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지5"></a>
-									</div>
+									
 									
 								</div>
 							</div>
