@@ -108,7 +108,7 @@ table.vertic-table tbody tr td:last-child {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(630 370);
+   transform: translate(500 370);
    padding: 30px;
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
    text-align: center;

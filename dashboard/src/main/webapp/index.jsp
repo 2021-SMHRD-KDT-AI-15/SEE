@@ -172,6 +172,17 @@ table {
 	height: 30px;
 	font-size: 15px;
 }
+
+.a_btn:hover, .job_btn:hover, #news_btn:hover, #notice_btn:hover, #bul_btn:hover {
+	background-color: gray;
+	cursor: pointer;
+}
+
+#news_btn {
+	background-color: white;
+	color: black;
+}
+
 </style>
 </head>
 <body>
@@ -186,7 +197,7 @@ table {
 				<div id="left">
 
 					<div>
-						<div class="title">
+						<div class="title"><img src="asset/img/home.png" width="20" style="margin-bottom: -4px;">
 							인구현황
 							<div id="pop_btn">
 								<button id="dg" onclick="getdongData()">동구</button>
@@ -203,7 +214,7 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title" id="tit_job">
+					<div class="title" id="tit_job"><img src="asset/img/job.png" width="20" style="margin-bottom: -4px;">
 						일자리
 						<div id="unit" margin-top="10px">단위 (목표 : 명, 취업자 수 : 천명)</div>
 					</div>
@@ -211,11 +222,11 @@ table {
 						<table id="general" border="1px" width="510">
 							<tr>
 								<td rowspan="4" width="65">일반</td>
-								<td rowspan="2" width="100"><img src="asset/img/goal.png"><br>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png" style="margin-bottom: -10px"><br>
 									<br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4"><img src="asset/img/rise.png"><br>
+								<td rowspan="4"><img src="asset/img/rise.png" style="margin-bottom: -7px"><br>
 									<br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
@@ -225,7 +236,7 @@ table {
 								<td id="g_goal2"></td>
 							</tr>
 							<tr>
-								<td rowspan="2"><img src="asset/img/opportunity.png"><br>
+								<td rowspan="2"><img src="asset/img/opportunity.png" style="margin-bottom: -10px"><br>
 									<br>취업자 수</td>
 								<td width="50">2분기</td>
 								<td width="50">3분기</td>
@@ -244,11 +255,11 @@ table {
 										<span height="1px"></span><br> </span>
 										<button class="job_btn">고용정책</button></a>
 								</td>
-								<td rowspan="2" width="100"><img src="asset/img/goal.png"><br>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png" style="margin-bottom: -10px"><br>
 									<br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4"><img src="asset/img/rise.png"><br>
+								<td rowspan="4"><img src="asset/img/rise.png" style="margin-bottom: -7px"><br>
 									<br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
@@ -259,7 +270,7 @@ table {
 							</tr>
 							<tr>
 
-								<td rowspan="2"><img src="asset/img/opportunity.png"><br>
+								<td rowspan="2"><img src="asset/img/opportunity.png" style="margin-bottom: -10px"><br>
 									<br>취업자 수</td>
 								<td>2분기</td>
 								<td>3분기</td>
@@ -278,22 +289,21 @@ table {
 										height="1px"></span><br>
 										<button class="job_btn">고용정책</button></a>
 								</td>
-								<td rowspan="2" width="100"><img src="asset/img/goal.png"><br>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png" style="margin-bottom: -10px"><br>
 									<br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4"><img src="asset/img/rise.png"><br>
+								<td rowspan="4"><img src="asset/img/rise.png" style="margin-bottom: -7px"><br>
 									<br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
-							<tr>
 								<td id="o_goal1" width=50></td>
 								<td id="o_goal2" width=50></td>
 							</tr>
 							<tr>
 
-								<td rowspan="2"><img src="asset/img/opportunity.png"><br>
+								<td rowspan="2"><img src="asset/img/opportunity.png" style="margin-bottom: -10px"><br>
 									<br>취업자 수</td>
 								<td>2분기</td>
 								<td>3분기</td>
@@ -311,7 +321,7 @@ table {
 				<div id="center">
 					<div id="wheather">
 						<div
-							style="background-color: rgb(81, 83, 85); padding: 40px; color: #fff; width: 230px; height: 25px; border-radius: 20px;">
+							style="background-color: rgb(81, 83, 85); background-color: rgba(0, 0, 0, 0.4); padding: 40px; color: #fff; width: 230px; height: 25px; border-radius: 20px; border: 2px outset;">
 							<div style="float: left;">
 								<div class="weather_icon">
 									<img src="" id="img"></img>
@@ -321,10 +331,10 @@ table {
 							<div
 								style="float: right; margin: -10px 0px 0px 60px; font-size: 11pt">
 								<div class="humidity"></div>
-								<div class="wind"></div>
-								<div class="cloud"></div>
+								<div class="wind" style="margin-top: 10px;"></div>
+								<div class="cloud" style="margin-top: 10px;"></div>
 							</div>
-							<div style="float: left; margin: -50px 0px 0px -20px;">
+							<div style="float: left; margin: -73px 0px 0px -20px;">
 								<div class="city" style="font-size: 13pt"></div>
 								<span class="weather_description" style="font-size: 5pt"></span>
 								<span class="current_temp" style="font-size: 30pt"></span>
@@ -334,7 +344,7 @@ table {
 					<div id="modal-box-dg">
 						<div id="modal-contents">
 							<a href="#none" class="btn-close"><img
-								src="asset/img/icon_x.png"></a>
+								src="asset/img/icon_x.png" width="20"></a>
 							<h2 class="title_md">
 								<span class="binding">동구</span> 통계 <span class="binding">(2023년
 									12월 기준)</span>
@@ -359,7 +369,7 @@ table {
 					<div id="modal-box-sg">
 						<div id="modal-contents">
 							<a href="#none" class="btn-close"><img
-								src="asset/img/icon_x.png"></a>
+								src="asset/img/icon_x.png" width="20"></a>
 							<h2 class="title_md">
 								<span class="binding">서구</span> 통계 <span class="binding">(2023년
 									12월 기준)</span>
@@ -384,7 +394,7 @@ table {
 					<div id="modal-box-ng">
 						<div id="modal-contents">
 							<a href="#none" class="btn-close"><img
-								src="asset/img/icon_x.png"></a>
+								src="asset/img/icon_x.png" width="20"></a>
 							<h2 class="title_md">
 								<span class="binding">남구</span> 통계 <span class="binding">(2023년
 									12월 기준)</span>
@@ -409,7 +419,7 @@ table {
 					<div id="modal-box-bg">
 						<div id="modal-contents">
 							<a href="#none" class="btn-close"><img
-								src="asset/img/icon_x.png"></a>
+								src="asset/img/icon_x.png" width="20"></a>
 							<h2 class="title_md">
 								<span class="binding">북구</span> 통계 <span class="binding">(2023년
 									12월 기준)</span>
@@ -434,7 +444,7 @@ table {
 					<div id="modal-box-gg">
 						<div id="modal-contents">
 							<a href="#none" class="btn-close"><img
-								src="asset/img/icon_x.png"></a>
+								src="asset/img/icon_x.png" width="20"></a>
 							<h2 class="title_md">
 								<span class="binding">광산구</span> 통계 <span class="binding">(2023년
 									12월 기준)</span>
@@ -527,7 +537,7 @@ table {
 				</div>
 				<div id="right">
 					<div id="sns"></div>
-					<div class="title">
+					<div class="title"><img src="asset/img/mega.png" width="20" style="margin-bottom: -4px;">
 						민원현황
 						<div id="comp_btn">
 							<a
@@ -540,7 +550,7 @@ table {
 					<div id="comp">
 						<canvas id="comp_chart" width="500" height="250"></canvas>
 					</div>
-					<div class="title">
+					<div class="title"><img src="asset/img/promise.png" width="20" style="margin-bottom: -4px;">
 						공약현황
 						<div id="prom_btn">
 							<a
@@ -603,7 +613,7 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title">시정뉴스</div>
+					<div class="title"><img src="asset/img/news.png" width="20" style="margin-bottom: -4px;">시정뉴스</div>
 					<div id="card">
 						<table id="news_table" border="1" width="510">
 							<tr colspan=2>

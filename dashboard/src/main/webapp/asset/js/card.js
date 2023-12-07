@@ -12,14 +12,14 @@ var bul_list = new Array();
 var date_list = new Array();
 
 function callBackFunc_card(data) {
-	
+
 	for (let i = 0; i < 5; i++) {
 		news_list.push(data[i].news_tit)
 		notice_list.push(data[i].notice_tit)
 		bul_list.push(data[i].bulletin_tit)
 		date_list.push(data[i].cardnews_date)
 	}
-	
+
 	document.getElementById("ns1").textContent = news_list[0];
 	document.getElementById("ns2").textContent = news_list[1];
 	document.getElementById("ns3").textContent = news_list[2];
@@ -55,9 +55,53 @@ function callBackFunc_card(data) {
 		document.getElementById("ns3").textContent = news_list[2];
 		document.getElementById("ns4").textContent = news_list[3];
 		document.getElementById("ns5").textContent = news_list[4];
+
 	})
 
+	$("#notice_btn").on("click", function() {
+		$("#notice_btn").css({
+			backgroundColor: "white",
+			color: "black"
+		})
+		$("#news_btn").css({
+			backgroundColor: "transparent",
+			color: "white"
+		})
+		$("#bul_btn").css({
+			backgroundColor: "transparent",
+			color: "white"
+		})
+	})
 
+	$("#bul_btn").on("click", function() {
+		$("#bul_btn").css({
+			backgroundColor: "white",
+			color: "black"
+		})
+		$("#news_btn").css({
+			backgroundColor: "transparent",
+			color: "white"
+		})
+		$("#notice_btn").css({
+			backgroundColor: "transparent",
+			color: "white"
+		})
+	})
+	
+	$("#news_btn").on("click", function() {
+		$("#news_btn").css({
+			backgroundColor: "white",
+			color: "black"
+		})
+		$("#notice_btn").css({
+			backgroundColor: "transparent",
+			color: "white"
+		})
+		$("#bul_btn").css({
+			backgroundColor: "transparent",
+			color: "white"
+		})
+	})
 
 
 }
