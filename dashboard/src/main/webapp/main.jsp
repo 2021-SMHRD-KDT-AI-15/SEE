@@ -154,6 +154,7 @@ table {
 
 #tit_job {
 	width: 510px;
+	margin-top: 30px;
 }
 
 .a_btn {
@@ -169,13 +170,14 @@ table {
 
 #news_btn {
 	background-color: white;
-	color: black;
+	color: rgb(30, 34, 35);
+	font-weight: bold;
 }
 </style>
 </head>
 <body>
 	<div class="bgimg"></div>
-	<span id="logo"><a href="index.jsp"><img width="25px"
+	<span id="logo"><a href="main.jsp"><img width="25px"
 			src="asset/img/로고.svg"> <span class="head">광주광역시</span></a></span>
 	</div>
 	<div id="body">
@@ -238,7 +240,7 @@ table {
 						<table id="young" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">청년 <a
-									href="https://gjyouthcenter.kr/index.do?contentId=294"><br>
+									href="https://gjyouthcenter.kr/index.do?contentId=294" target="_blank"><br>
 										<span height="1px"></span><br> </span>
 										<button class="job_btn">고용정책</button></a>
 								</td>
@@ -271,7 +273,7 @@ table {
 						<table id="old" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">노인 <a
-									href="https://gjsenior.kr/news"><br> <span
+									href="https://gjsenior.kr/news" target="_blank"><br> <span
 										height="1px"></span><br>
 										<button class="job_btn">고용정책</button></a>
 								</td>
@@ -300,6 +302,13 @@ table {
 								<td id="o_job2" rowspan="2"></td>
 							</tr>
 						</table>
+					</div>
+					<div style="position: relative; top: 30px;">
+					<table>
+					<tr>
+					<a href="https://bigdata.gwangju.go.kr/usr/main/goMain.rd"><img src="asset/img/big.png"></a>
+					</tr>
+					</table>
 					</div>
 				</div>
 				<div id="center">
