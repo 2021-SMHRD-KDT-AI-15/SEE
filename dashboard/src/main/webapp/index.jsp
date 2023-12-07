@@ -12,7 +12,7 @@
 <style>
 @font-face {
 	font-family: "bg_Medium";
-	src: url("./asset/font/bg_Medium.woff") format("woff");
+	src: url("./asset/font/GmarketSansTTFMedium.woff") format("woff");
 }
 
 html, body {
@@ -216,7 +216,7 @@ table {
 					<p></p>
 					<div class="title" id="tit_job"><img src="asset/img/job.png" width="20" style="margin-bottom: -4px;">
 						일자리
-						<div id="unit" margin-top="10px">단위 (목표 : 명, 취업자 수 : 천명)</div>
+						<div id="unit" style="position: relative; bottom: -15px;">단위 (목표 : 명, 취업자 수 : 천명)</div>
 					</div>
 					<div id="job">
 						<table id="general" border="1px" width="510">
@@ -329,15 +329,15 @@ table {
 							</div>
 
 							<div
-								style="float: right; margin: -10px 0px 0px 60px; font-size: 11pt">
+								style="float: right; font-size: 11pt; position: relative; right: -13px; top: -17px;">
 								<div class="humidity"></div>
 								<div class="wind" style="margin-top: 10px;"></div>
 								<div class="cloud" style="margin-top: 10px;"></div>
 							</div>
-							<div style="float: left; margin: -73px 0px 0px -20px;">
-								<div class="city" style="font-size: 13pt"></div>
-								<span class="weather_description" style="font-size: 5pt"></span>
-								<span class="current_temp" style="font-size: 30pt"></span>
+							<div style="float: left;">
+								<div class="city" style="font-size: 18pt; position: relative; top: -88px; left: 30px" align="left"></div>
+								<span class="weather_description" style="font-size: 5pt; position: relative; left: -25px; top: -102px;"></span>
+								<span class="current_temp" style="font-size: 30pt; position: relative; left: -25px; top: -95px;"></span>
 							</div>
 						</div>
 					</div>
@@ -469,7 +469,7 @@ table {
 					<div class="map-svg">
 						<svg xmlns="http://www.w3.org/2000/svg" version="1.2"
 							baseProfile="tiny" width="800" height="600"
-							viewBox="-150 -25 1000 500" stroke-width="1"
+							viewBox="-150 80 1000 500" stroke-width="1"
 							stroke-linecap="round" stroke-linejoin="round">
             <g id="hangjeongdong_광주광역시">
                 <g ng-repeat="pop_rank in dong_pop_rank_list" ng-switch
@@ -573,8 +573,8 @@ table {
 							<tr>
 								<%
 								for (int i = 0; i < 5; i++) {
-									out.print("<td style=\"font-size: 9px;\">공약과제</td>");
-									out.print("<td style=\"font-size: 9px;\">세부사업</td>");
+									out.print("<td>공약</td>");
+									out.print("<td>세부</td>");
 								}
 								%>
 							</tr>
