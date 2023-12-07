@@ -19,28 +19,6 @@
 .top:hover text, .top:hover tspan {
 	fill: #333;
 }
-/*
-.cls_dg {
-	fill: #4e4eea
-}
-
-.cls_sg {
-	fill: #605ccc
-}
-
-.cls_ng {
-	fill: #5c6dda
-}
-
-.cls_bg {
-	fill: #6591c3
-}
-
-.cls_gsg {
-	fill: #526e88
-}
-*/
-
 
 .group {
 	cursor: pointer;

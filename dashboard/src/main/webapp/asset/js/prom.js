@@ -40,46 +40,31 @@ function callBackFunc_prom(data) {
 	document.getElementById("name4").textContent = name_list[3];
 	document.getElementById("name5").textContent = name_list[4];
 
-
-
-	// 차트를 그럴 영역을 dom요소로 가져온다.
 	const chartArea1 = document.getElementById('myChart1').getContext('2d');
-	// 차트를 생성한다. 
 	const myChart1 = new Chart(chartArea1, {
-		// ①차트의 종류(String)
 		type: 'bar',
-		// ②차트의 데이터(Object)
 		data: {
-			// ③x축에 들어갈 이름들(Array)
 			labels: ['완료', '진행중', '보류'],
-			// ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
 			datasets: [{
-				// ⑤dataset의 이름(String)
 				label: '신경제도시',
-				// ⑥dataset값(Array)
 				data: [fin_list[0], ing_list[0], hold_list[0]],
-				// ⑦dataset의 배경색(rgba값을 String으로 표현)
 				backgroundColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
 					'rgba(153, 102, 255)'],
-				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
 					'rgba(153, 102, 255)'],
-				// ⑨dataset의 선 두께(Number)
 				borderWidth: 1
 			}]
 		},
-		// ⑩차트의 설정(Object)
 		options: {
 			plugins: {
 				legend: {
 					display: false
 				},
 			},
-			// ⑪축에 관한 설정(Object)
 			responsive: false,
 			indexAxis: 'y',
 			scales: {
@@ -93,24 +78,18 @@ function callBackFunc_prom(data) {
 			}
 		}
 	});
-
-
 	const chartArea2 = document.getElementById('myChart2').getContext('2d');
 	const myChart2 = new Chart(chartArea2, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
-			// ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
 			datasets: [{
-				// ⑤dataset의 이름(String)
 				label: '꿀잼도시',
-				// ⑥dataset값(Array)
 				data: [fin_list[1], ing_list[1], hold_list[1]],
 				backgroundColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
 					'rgba(153, 102, 255)'],
-				// ⑧dataset의cocon색(rgba값을 String으로 표현)
 				borderColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
@@ -137,24 +116,18 @@ function callBackFunc_prom(data) {
 			}
 		}
 	});
-
-
 	const chartArea3 = document.getElementById('myChart3').getContext('2d');
 	const myChart3 = new Chart(chartArea3, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
-			// ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
 			datasets: [{
-				// ⑤dataset의 이름(String)
 				label: '돌봄도시',
-				// ⑥dataset값(Array)
 				data: [fin_list[2], ing_list[2], hold_list[2]],
 				backgroundColor: [
 					'rgba(54, 162, 235,1)',
 					'rgba(75, 192, 192,1)',
 					'rgba(153, 102, 255,1)'],
-				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
 					'rgba(54, 162, 235,1)',
 					'rgba(75, 192, 192,1)',
@@ -187,17 +160,13 @@ function callBackFunc_prom(data) {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
-			// ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
 			datasets: [{
-				// ⑤dataset의 이름(String)
 				label: '안심도시',
-				// ⑥dataset값(Array)
 				data: [fin_list[3], ing_list[3], hold_list[3]],
 				backgroundColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
 					'rgba(153, 102, 255)'],
-				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
@@ -224,23 +193,18 @@ function callBackFunc_prom(data) {
 			}
 		}
 	});
-
 	const chartArea5 = document.getElementById('myChart5').getContext('2d');
 	const myChart5 = new Chart(chartArea5, {
 		type: 'bar',
 		data: {
 			labels: ['완료', '진행중', '보류'],
-			// ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
 			datasets: [{
-				// ⑤dataset의 이름(String)
 				label: '교육도시',
-				// ⑥dataset값(Array)
 				data: [fin_list[4], ing_list[4], hold_list[4]],
 				backgroundColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
 					'rgba(153, 102, 255)'],
-				// ⑧dataset의 선 색(rgba값을 String으로 표현)
 				borderColor: [
 					'rgba(54, 162, 235)',
 					'rgba(75, 192, 192)',
