@@ -11,8 +11,8 @@
 <title>Document</title>
 <style>
 @font-face {
-	font-family: "bg_Medium";
-	src: url("./asset/font/bg_Medium.woff") format("woff");
+	font-family: "GmarketSansTTFMedium";
+	src: url("./asset/font/GmarketSansTTFMedium.woff") format("woff");
 }
 
 html, body {
@@ -46,7 +46,7 @@ td {
 
 * {
 	font-size: 13px;
-	font-family: "bg_Medium";
+	font-family: "GmarketSansTTFMedium";
 	color: white;
 }
 
@@ -173,7 +173,8 @@ table {
 	font-size: 15px;
 }
 
-.a_btn:hover, .job_btn:hover, #news_btn:hover, #notice_btn:hover, #bul_btn:hover {
+.a_btn:hover, .job_btn:hover, #news_btn:hover, #notice_btn:hover,
+	#bul_btn:hover {
 	background-color: gray;
 	cursor: pointer;
 }
@@ -182,7 +183,6 @@ table {
 	background-color: white;
 	color: black;
 }
-
 </style>
 </head>
 <body>
@@ -197,8 +197,9 @@ table {
 				<div id="left">
 
 					<div>
-						<div class="title"><img src="asset/img/home.png" width="20" style="margin-bottom: -4px;">
-							인구현황
+						<div class="title">
+							<img src="asset/img/home.png" width="20"
+								style="margin-bottom: -4px;"> 인구현황
 							<div id="pop_btn">
 								<button id="dg" onclick="getdongData()">동구</button>
 								<button id="sg" onclick="getseoData()">서구</button>
@@ -214,20 +215,21 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title" id="tit_job"><img src="asset/img/job.png" width="20" style="margin-bottom: -4px;">
-						일자리
+					<div class="title" id="tit_job">
+						<img src="asset/img/job.png" width="20"
+							style="margin-bottom: -4px;"> 일자리
 						<div id="unit" margin-top="10px">단위 (목표 : 명, 취업자 수 : 천명)</div>
 					</div>
 					<div id="job">
 						<table id="general" border="1px" width="510">
 							<tr>
 								<td rowspan="4" width="65">일반</td>
-								<td rowspan="2" width="100"><img src="asset/img/goal.png" style="margin-bottom: -10px"><br>
-									<br>목표</td>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png"
+									style="margin-bottom: -10px"><br> <br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4"><img src="asset/img/rise.png" style="margin-bottom: -7px"><br>
-									<br>고용률</td>
+								<td rowspan="4"><img src="asset/img/rise.png"
+									style="margin-bottom: -7px"><br> <br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
@@ -236,8 +238,8 @@ table {
 								<td id="g_goal2"></td>
 							</tr>
 							<tr>
-								<td rowspan="2"><img src="asset/img/opportunity.png" style="margin-bottom: -10px"><br>
-									<br>취업자 수</td>
+								<td rowspan="2"><img src="asset/img/opportunity.png"
+									style="margin-bottom: -10px"><br> <br>취업자 수</td>
 								<td width="50">2분기</td>
 								<td width="50">3분기</td>
 								<td id="g_rate1" rowspan="2"></td>
@@ -255,12 +257,12 @@ table {
 										<span height="1px"></span><br> </span>
 										<button class="job_btn">고용정책</button></a>
 								</td>
-								<td rowspan="2" width="100"><img src="asset/img/goal.png" style="margin-bottom: -10px"><br>
-									<br>목표</td>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png"
+									style="margin-bottom: -10px"><br> <br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4"><img src="asset/img/rise.png" style="margin-bottom: -7px"><br>
-									<br>고용률</td>
+								<td rowspan="4"><img src="asset/img/rise.png"
+									style="margin-bottom: -7px"><br> <br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
@@ -270,8 +272,8 @@ table {
 							</tr>
 							<tr>
 
-								<td rowspan="2"><img src="asset/img/opportunity.png" style="margin-bottom: -10px"><br>
-									<br>취업자 수</td>
+								<td rowspan="2"><img src="asset/img/opportunity.png"
+									style="margin-bottom: -10px"><br> <br>취업자 수</td>
 								<td>2분기</td>
 								<td>3분기</td>
 								<td id="y_rate1" rowspan="2"></td>
@@ -289,22 +291,22 @@ table {
 										height="1px"></span><br>
 										<button class="job_btn">고용정책</button></a>
 								</td>
-								<td rowspan="2" width="100"><img src="asset/img/goal.png" style="margin-bottom: -10px"><br>
-									<br>목표</td>
+								<td rowspan="2" width="100"><img src="asset/img/goal.png"
+									style="margin-bottom: -10px"><br> <br>목표</td>
 								<td>2분기</td>
 								<td>3분기</td>
-								<td rowspan="4"><img src="asset/img/rise.png" style="margin-bottom: -7px"><br>
-									<br>고용률</td>
+								<td rowspan="4"><img src="asset/img/rise.png"
+									style="margin-bottom: -7px"><br> <br>고용률</td>
 								<td rowspan="2" width="50">2분기</td>
 								<td rowspan="2" width="50">3분기</td>
 							</tr>
-								<td id="o_goal1" width=50></td>
-								<td id="o_goal2" width=50></td>
+							<td id="o_goal1" width=50></td>
+							<td id="o_goal2" width=50></td>
 							</tr>
 							<tr>
 
-								<td rowspan="2"><img src="asset/img/opportunity.png" style="margin-bottom: -10px"><br>
-									<br>취업자 수</td>
+								<td rowspan="2"><img src="asset/img/opportunity.png"
+									style="margin-bottom: -10px"><br> <br>취업자 수</td>
 								<td>2분기</td>
 								<td>3분기</td>
 								<td id="o_rate1" rowspan="2"></td>
@@ -537,8 +539,9 @@ table {
 				</div>
 				<div id="right">
 					<div id="sns"></div>
-					<div class="title"><img src="asset/img/mega.png" width="20" style="margin-bottom: -4px;">
-						민원현황
+					<div class="title">
+						<img src="asset/img/mega.png" width="20"
+							style="margin-bottom: -4px;"> 민원현황
 						<div id="comp_btn">
 							<a
 								href="https://baroeungdap.gwangju.go.kr/contentsView.do?menuId=baroeungda0210101000"
@@ -548,10 +551,11 @@ table {
 						</div>
 					</div>
 					<div id="comp">
-						<canvas id="comp_chart" width="500" height="250"></canvas>
+						<canvas id="comp_chart" width="500" height="230"></canvas>
 					</div>
-					<div class="title"><img src="asset/img/promise.png" width="20" style="margin-bottom: -4px;">
-						공약현황
+					<div class="title">
+						<img src="asset/img/promise.png" width="20"
+							style="margin-bottom: -4px;"> 공약현황
 						<div id="prom_btn">
 							<a
 								href="https://www.gwangju.go.kr/gjmayor/contentsView.do?pageId=newgjmayor38"
@@ -573,8 +577,8 @@ table {
 							<tr>
 								<%
 								for (int i = 0; i < 5; i++) {
-									out.print("<td style=\"font-size: 9px;\">공약과제</td>");
-									out.print("<td style=\"font-size: 9px;\">세부사업</td>");
+									out.print("<td style=\"font-size: 10px;\">공약과제</td>");
+									out.print("<td style=\"font-size: 10px;\">세부사업</td>");
 								}
 								%>
 							</tr>
@@ -613,7 +617,10 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title"><img src="asset/img/news.png" width="20" style="margin-bottom: -4px;">시정뉴스</div>
+					<div class="title">
+						<img src="asset/img/news.png" width="20"
+							style="margin-bottom: -4px;">시정뉴스
+					</div>
 					<div id="card">
 						<table id="news_table" border="1" width="510">
 							<tr colspan=2>
@@ -621,7 +628,6 @@ table {
 								<button id="notice_btn">공지사항</button>
 								<button id="bul_btn">고시공고</button>
 							</tr>
-
 							<tr>
 								<td id="ns1" width="420"></td>
 								<td class="date" id="date1" width="75"></td>
@@ -642,6 +648,93 @@ table {
 								<td id="ns5" width="420"></td>
 								<td class="date" id="date5"></td>
 							</tr>
+							</table>
+							<div class="title" id="img_title">
+							<img src="asset/img/mega.png" width="20"
+							style="margin-bottom: -4px;">
+							카드뉴스</div>
+							<table>
+							<tr colspan=2>
+					<div id="img_news">
+						<div class="slider__wrap">
+							<div class="slider__img">
+								<div class="slider__inner">
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMPVOCEPj9gEWE6l1JJeEXXnf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지1"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMMOha9t9ZPj7H+KimZw/+t7f0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지2"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAhKvJKrJ2VNDTT5sfdN4Ozf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지3"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAdQEc1DiXZARckyjN4hIVXf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지4"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMCrJmB7BbuhqpkqL67xpnhff0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지5"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMPVOCEPj9gEWE6l1JJeEXXnf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지1"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMMOha9t9ZPj7H+KimZw/+t7f0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지2"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAhKvJKrJ2VNDTT5sfdN4Ozf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지3"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAdQEc1DiXZARckyjN4hIVXf0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지4"></a>
+									</div>
+									<div class="slider">
+										<a
+											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111"><img
+											class="img_news"
+											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMCrJmB7BbuhqpkqL67xpnhff0NdDwnLJgUh7mS2IwFqn"
+											alt="이미지5"></a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+							</tr>
 						</table>
 					</div>
 				</div>
@@ -659,6 +752,7 @@ table {
 		<script src="asset/js/comp.js"></script>
 		<script src="asset/js/modal.js"></script>
 		<script src="asset/js/wheater.js"></script>
+		<script src="asset/js/img_news.js"></script>
 		<link rel="stylesheet" href="asset/css/modal.css">
 		<link rel="stylesheet" href="asset/css/map.css">
 		<link rel="stylesheet" href="asset/css/card.css">
@@ -666,5 +760,6 @@ table {
 		<link rel="stylesheet" href="asset/css/pop.css">
 		<link rel="stylesheet" href="asset/css/prom.css">
 		<link rel="stylesheet" href="asset/css/job.css">
+		<link rel="stylesheet" href="asset/css/img_news.css">
 </body>
 </html>
