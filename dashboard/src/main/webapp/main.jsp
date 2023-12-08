@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="asset/img/symbol.png"/>
+<link rel="icon" href="asset/img/symbol.png" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>광주광역시 스마트 시정 지원시스템</title>
@@ -95,6 +95,7 @@ table {
 	border: 1px solid #585858;
 	border-collapse: collapse;
 }
+
 #span1 {
 	width: 20px;
 	height: 10px;
@@ -173,6 +174,18 @@ table {
 	color: rgb(30, 34, 35);
 	font-weight: bold;
 }
+
+#dg:hover, #sg:hover, #ng:hover, #bg:hover, #gg:hover {
+	background-color: gray;
+	cursor: pointer;
+}
+
+#dg {
+	background-color: white;
+	color: rgb(31, 35, 32);
+	font-weight: bold;
+}
+
 </style>
 </head>
 <body>
@@ -203,9 +216,11 @@ table {
 					</div>
 					<p></p>
 					<p></p>
-					<div class="title" id="tit_job"><img src="asset/img/job.png" width="20" style="margin-bottom: -4px;">
-						일자리
-						<div id="unit" style="position: relative; bottom: -15px;">단위 (목표 : 명, 취업자 수 : 천명)</div>
+					<div class="title" id="tit_job">
+						<img src="asset/img/job.png" width="20"
+							style="margin-bottom: -4px;"> 일자리
+						<div id="unit" style="position: relative; bottom: -15px;">단위
+							(목표 : 명, 취업자 수 : 천명)</div>
 					</div>
 					<div id="job">
 						<table id="general" border="1px" width="510">
@@ -240,8 +255,9 @@ table {
 						<table id="young" border="1" width="510">
 							<tr>
 								<td rowspan="4" width="65">청년 <a
-									href="https://gjyouthcenter.kr/index.do?contentId=294" target="_blank"><br>
-										<span height="1px"></span><br> </span>
+									href="https://gjyouthcenter.kr/index.do?contentId=294"
+									target="_blank"><br> <span height="1px"></span><br>
+										</span>
 										<button class="job_btn">고용정책</button></a>
 								</td>
 								<td rowspan="2" width="100"><img src="asset/img/goal.png"
@@ -304,11 +320,12 @@ table {
 						</table>
 					</div>
 					<div style="position: relative; top: 30px;">
-					<table>
-					<tr>
-					<a href="https://bigdata.gwangju.go.kr/usr/main/goMain.rd"><img src="asset/img/big.png"></a>
-					</tr>
-					</table>
+						<table>
+							<tr>
+								<a href="https://bigdata.gwangju.go.kr/usr/main/goMain.rd"
+									target="_blank"><img src="asset/img/big.png"></a>
+							</tr>
+						</table>
 					</div>
 				</div>
 				<div id="center">
@@ -327,9 +344,13 @@ table {
 								<div class="cloud" style="margin-top: 10px;"></div>
 							</div>
 							<div style="float: left;">
-								<div class="city" style="font-size: 18pt; position: relative; top: -88px; left: 30px" align="left"></div>
-								<span class="weather_description" style="font-size: 5pt; position: relative; left: -25px; top: -102px;"></span>
-								<span class="current_temp" style="font-size: 30pt; position: relative; left: -25px; top: -95px;"></span>
+								<div class="city"
+									style="font-size: 18pt; position: relative; top: -22px; left: 30px"
+									align="left"></div>
+								<span class="weather_description"
+									style="font-size: 5pt; position: relative; left: -25px; top: -37px;"></span>
+								<span class="current_temp"
+									style="font-size: 30pt; position: relative; left: -25px; top: -33px;"></span>
 							</div>
 						</div>
 					</div>
@@ -628,78 +649,80 @@ table {
 								<td id="ns5" width="420"></td>
 								<td class="date" id="date5"></td>
 							</tr>
-							</table>
-							<div class="title" id="img_title">
+						</table>
+						<div class="title" id="img_title">
 							<img src="asset/img/mega.png" width="20"
-							style="margin-bottom: -4px;">
-							카드뉴스</div>
-							<table>
+								style="margin-bottom: -4px;"> 카드뉴스
+						</div>
+						<table>
 							<tr colspan=2>
-					<div id="img_news">
-						<div class="slider__wrap">
-							<div class="slider__img">
-								<div class="slider__inner">
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMPVOCEPj9gEWE6l1JJeEXXnf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지1"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMMOha9t9ZPj7H+KimZw/+t7f0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지2"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAhKvJKrJ2VNDTT5sfdN4Ozf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지3"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAdQEc1DiXZARckyjN4hIVXf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지4"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMCrJmB7BbuhqpkqL67xpnhff0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지5"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1120" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMElZ5TVBvkRtSyZ41K6bxajf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지6"></a>
-									</div>
-									<div class="slider">
-										<a
-											href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1123" target="_blank"><img
-											class="img_news"
-											src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMHJwZBQxmJhJ5NFho1AZ2EHf0NdDwnLJgUh7mS2IwFqn"
-											alt="이미지7"></a>
+								<div id="img_news">
+									<div class="slider__wrap">
+										<div class="slider__img">
+											<div class="slider__inner">
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1118&movePage=1"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMPVOCEPj9gEWE6l1JJeEXXnf0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지1"></a>
+												</div>
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1116"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMMOha9t9ZPj7H+KimZw/+t7f0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지2"></a>
+												</div>
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1115&movePage=2&searchTy=TM"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAhKvJKrJ2VNDTT5sfdN4Ozf0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지3"></a>
+												</div>
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1114"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMAdQEc1DiXZARckyjN4hIVXf0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지4"></a>
+												</div>
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1111"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMCrJmB7BbuhqpkqL67xpnhff0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지5"></a>
+												</div>
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1120"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMElZ5TVBvkRtSyZ41K6bxajf0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지6"></a>
+												</div>
+												<div class="slider">
+													<a
+														href="https://www.gwangju.go.kr/boardView.do?pageId=www802&boardId=GR_0302000000&seq=1123"
+														target="_blank"><img class="img_news"
+														src="https://www.gwangju.go.kr/imageView/25fe88FFfBCbeQxjRRPIMHJwZBQxmJhJ5NFho1AZ2EHf0NdDwnLJgUh7mS2IwFqn"
+														alt="이미지7"></a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
 							</tr>
 						</table>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 		<script src="asset/js/job.js"></script>
 		<script src="asset/js/prom.js"></script>
 		<script src="asset/js/card.js"></script>

@@ -66,11 +66,14 @@ function callBackFunc_card(data) {
 		})
 		$("#news_btn").css({
 			backgroundColor: "transparent",
-			color: "white"
+			color: "white",
+			fontWeight: "normal"
+			
 		})
 		$("#bul_btn").css({
 			backgroundColor: "transparent",
-			color: "white"
+			color: "white",
+			fontWeight: "normal"
 		})
 	})
 
@@ -82,11 +85,13 @@ function callBackFunc_card(data) {
 		})
 		$("#news_btn").css({
 			backgroundColor: "transparent",
-			color: "white"
+			color: "white",
+			fontWeight: "normal"
 		})
 		$("#notice_btn").css({
 			backgroundColor: "transparent",
-			color: "white"
+			color: "white",
+			fontWeight: "normal"
 		})
 	})
 	
@@ -98,11 +103,13 @@ function callBackFunc_card(data) {
 		})
 		$("#notice_btn").css({
 			backgroundColor: "transparent",
-			color: "white"
+			color: "white",
+			fontWeight: "normal"
 		})
 		$("#bul_btn").css({
 			backgroundColor: "transparent",
-			color: "white"
+			color: "white",
+			fontWeight: "normal"
 		})
 	})
 

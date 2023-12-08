@@ -100,3 +100,143 @@
          }
          MyChart = new Chart(ctx,pop_Chart);
       }
+
+      $("#dg").on("click", function() {
+		$("#dg").css({
+			backgroundColor: "white",
+			color: "rgb(31, 35, 32)",
+			fontWeight: "bold"
+		})
+		$("#sg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#ng").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#bg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#gg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+	})
+	
+	$("#sg").on("click", function() {
+		$("#sg").css({
+			backgroundColor: "white",
+			color: "rgb(31, 35, 32)",
+			fontWeight: "bold"
+		})
+		$("#dg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#ng").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#bg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#gg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+	})
+	
+	$("#ng").on("click", function() {
+		$("#ng").css({
+			backgroundColor: "white",
+			color: "rgb(31, 35, 32)",
+			fontWeight: "bold"
+		})
+		$("#sg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#dg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#bg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#gg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+	})
+	
+	$("#bg").on("click", function() {
+		$("#bg").css({
+			backgroundColor: "white",
+			color: "rgb(31, 35, 32)",
+			fontWeight: "bold"
+		})
+		$("#sg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#ng").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#dg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#gg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+	})
+	
+	$("#gg").on("click", function() {
+		$("#gg").css({
+			backgroundColor: "white",
+			color: "rgb(31, 35, 32)",
+			fontWeight: "bold"
+		})
+		$("#sg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#ng").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#bg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+		$("#dg").css({
+			backgroundColor: "transparent",
+			color: "white",
+			fontWeight: "normal"
+		})
+	})
