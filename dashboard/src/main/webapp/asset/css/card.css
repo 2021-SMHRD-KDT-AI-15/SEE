@@ -1,42 +1,42 @@
 @charset "UTF-8";
 #ns1 {
-	width: 380;
 	display: block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	position: relative;
 }
 
 #ns2 {
-	width: 380;
 	display: block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	position: relative;
 }
 
 #ns3 {
-	width: 380;
 	display: block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	position: relative;
 }
 
 #ns4 {
-	width: 380;
 	display: block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	position: relative;
 }
 
 #ns5 {
-	width: 380;
 	display: block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	position: relative;
 }
 
 #news_table {
