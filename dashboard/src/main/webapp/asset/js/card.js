@@ -19,6 +19,17 @@ function callBackFunc_card(data) {
 		bul_list.push(data[i].bulletin_tit)
 		date_list.push(data[i].cardnews_date)
 	}
+	
+let link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16805";
+let link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16804";
+let link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16803";
+let link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16802";
+let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16801";
+ function location1() { location.replace =link1;}
+ function location2() { location.replace =link2;}
+ function location3() { location.replace =link3;}
+ function location4() { location.replace =link4;}
+ function location5() { location.replace =link5;}
 
 	document.getElementById("ns1").textContent = news_list[0];
 	document.getElementById("ns2").textContent = news_list[1];
@@ -36,6 +47,11 @@ function callBackFunc_card(data) {
 	let bul_btn = document.getElementById("bul_btn")
 
 	notice_btn.addEventListener("click", function() {
+		link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14698"
+		link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14697"
+		link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14696"
+		link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14695"
+		link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14694"
 		document.getElementById("ns1").textContent = notice_list[0];
 		document.getElementById("ns2").textContent = notice_list[1];
 		document.getElementById("ns3").textContent = notice_list[2];
@@ -43,6 +59,11 @@ function callBackFunc_card(data) {
 		document.getElementById("ns5").textContent = notice_list[4];
 	})
 	bul_btn.addEventListener("click", function() {
+		link1 = "https://www.gwangju.go.kr/contentsView.do?pageId=www791"
+		link2 = "https://www.gwangju.go.kr/contentsView.do?pageId=www791"
+		link3 = "https://www.gwangju.go.kr/contentsView.do?pageId=www791"
+		link4 = "https://www.gwangju.go.kr/contentsView.do?pageId=www791"
+		link5 = "https://www.gwangju.go.kr/contentsView.do?pageId=www791"
 		document.getElementById("ns1").textContent = bul_list[0];
 		document.getElementById("ns2").textContent = bul_list[1];
 		document.getElementById("ns3").textContent = bul_list[2];

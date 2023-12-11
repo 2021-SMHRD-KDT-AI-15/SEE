@@ -186,6 +186,11 @@ table {
 	font-weight: bold;
 }
 
+#pause, #start {
+	border : none;
+	cursor: pointer;
+	float : right;
+}
 </style>
 </head>
 <body>
@@ -331,7 +336,7 @@ table {
 				<div id="center">
 					<div id="wheather">
 						<div
-							style="background-color: rgb(81, 83, 85); background-color: rgba(0, 0, 0, 0.4); padding: 40px; color: #fff; width: 230px; height: 25px; border-radius: 20px; border: 2px outset;">
+							style="background-color: rgb(81, 83, 85); background-color: rgba(0, 0, 0, 0.4); padding: 40px; color: #fff; width: 250px; height: 25px; border-radius: 20px; border: 2px outset;">
 							<div style="float: left;">
 								<div class="weather_icon">
 									<img src="" id="img"></img>
@@ -345,12 +350,12 @@ table {
 							</div>
 							<div style="float: left;">
 								<div class="city"
-									style="font-size: 18pt; position: relative; top: -88px; left: 30px"
+									style="font-size: 18pt; position: relative; top: -20px; left: 40px"
 									align="left"></div>
 								<span class="weather_description"
-									style="font-size: 5pt; position: relative; left: -25px; top: -102px;"></span>
+									style="font-size: 5pt; position: relative; left: -25px; top: -40px;"></span>
 								<span class="current_temp"
-									style="font-size: 30pt; position: relative; left: -25px; top: -95px;"></span>
+									style="font-size: 30pt; position: relative; left: -25px; top: -30px;"></span>
 							</div>
 						</div>
 					</div>
@@ -630,29 +635,35 @@ table {
 								<button id="bul_btn">고시공고</button>
 							</tr>
 							<tr>
-								<td id="ns1" width="420"></td>
+								<td width="420"><span id="ns1" onclick="location1();" style="cursor:pointer" width="420"></span></td>
 								<td class="date" id="date1" width="75"></td>
 							</tr>
 							<tr>
-								<td id="ns2" width="420"></td>
+								<td width="420"><span id="ns2" onclick="location2();" style="cursor:pointer" width="420"></span></td>
 								<td class="date" id="date2"></td>
 							</tr>
 							<tr>
-								<td id="ns3" width="420"></td>
+								<td width="420"><span id="ns3" onclick="location3();" style="cursor:pointer" width="420"></span></td>
 								<td class="date" id="date3"></td>
 							</tr>
 							<tr>
-								<td id="ns4" width="420"></td>
+								<td width="420"><span id="ns4" onclick="location4();" style="cursor:pointer" width="420"></span></td>
 								<td class="date" id="date4"></td>
 							</tr>
 							<tr>
-								<td id="ns5" width="420"></td>
+								<td width="420"><span id="ns5" onclick="location5();" style="cursor:pointer" width="420"></span></td>
 								<td class="date" id="date5"></td>
 							</tr>
 						</table>
 						<div class="title" id="img_title">
 							<img src="asset/img/news.png" width="20"
 								style="margin-bottom: -4px;"> 카드뉴스
+							<button id="pause" width="20">
+								<img src="asset/img/video-pause-button.png" width="20">
+							</button>
+							<button id="start" width="20">
+								<img src="asset/img/play-button.png" width="20">
+							</button>
 						</div>
 						<table>
 							<tr colspan=2>

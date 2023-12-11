@@ -8,9 +8,17 @@ let sliderCount = slider.length;    // 이미지 갯수
 let sliderInterval = 1000;          // 이미지 변경 간격 시간
 let sliderWidth = slider[0].clientWidth;   // 이미지 가로값 구하기
 let sliderClone = sliderInner.firstElementChild.cloneNode(true);  // 첫 번째 이미지 복사
+let pause = document.getElementById("pause");
 
 sliderInner.style.transition = "all 0.4s";
 setInterval(() => {
 	currentIndex = (currentIndex + 1) % sliderCount;
 	sliderInner.style.transform = "translateX(" + -170 * currentIndex + "px)";
 }, sliderInterval);
+
+pause.addEventListener("click", function() {
+	sliderInner.style.transition = "all 600s";
+})
+start.addEventListener("click", function() {
+	sliderInner.style.transition = "all 0.4s";
+})
