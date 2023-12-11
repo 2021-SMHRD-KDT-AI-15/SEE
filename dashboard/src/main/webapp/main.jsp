@@ -345,12 +345,12 @@ table {
 							</div>
 							<div style="float: left;">
 								<div class="city"
-									style="font-size: 18pt; position: relative; top: -22px; left: 30px"
+									style="font-size: 18pt; position: relative; top: -88px; left: 30px"
 									align="left"></div>
 								<span class="weather_description"
-									style="font-size: 5pt; position: relative; left: -25px; top: -37px;"></span>
+									style="font-size: 5pt; position: relative; left: -25px; top: -102px;"></span>
 								<span class="current_temp"
-									style="font-size: 30pt; position: relative; left: -25px; top: -33px;"></span>
+									style="font-size: 30pt; position: relative; left: -25px; top: -95px;"></span>
 							</div>
 						</div>
 					</div>
@@ -651,7 +651,7 @@ table {
 							</tr>
 						</table>
 						<div class="title" id="img_title">
-							<img src="asset/img/mega.png" width="20"
+							<img src="asset/img/news.png" width="20"
 								style="margin-bottom: -4px;"> 카드뉴스
 						</div>
 						<table>
@@ -739,6 +739,5 @@ table {
 		<link rel="stylesheet" href="asset/css/prom.css">
 		<link rel="stylesheet" href="asset/css/job.css">
 		<link rel="stylesheet" href="asset/css/img_news.css">
-		<link rel="stylesheet" href="asset/css/main.css">
 </body>
 </html>
