@@ -187,9 +187,13 @@ table {
 }
 
 #pause, #start {
-	border : none;
+	border: none;
 	cursor: pointer;
-	float : right;
+	float: right;
+}
+
+#news_table {
+	table-layout: fixed;
 }
 </style>
 </head>
@@ -629,29 +633,38 @@ table {
 					</div>
 					<div id="card">
 						<table id="news_table" border="1" width="510">
+							<colgroup>
+								<col width="430px"/>
+								<col width="75px"/>
+							</colgroup>
 							<tr colspan=2>
 								<button id="news_btn">보도자료</button>
 								<button id="notice_btn">공지사항</button>
 								<button id="bul_btn">고시공고</button>
 							</tr>
 							<tr>
-								<td width="420"><span id="ns1" onclick="location1();" style="cursor:pointer" width="420"></span></td>
-								<td class="date" id="date1" width="75"></td>
+								<td class="news_td"><span id="ns1" onclick="location1();"
+									style="cursor: pointer"></span></td>
+								<td class="date" id="date1"></td>
 							</tr>
 							<tr>
-								<td width="420"><span id="ns2" onclick="location2();" style="cursor:pointer" width="420"></span></td>
+								<td class="news_td"><span id="ns2" onclick="location2();"
+									style="cursor: pointer"></span></td>
 								<td class="date" id="date2"></td>
 							</tr>
 							<tr>
-								<td width="420"><span id="ns3" onclick="location3();" style="cursor:pointer" width="420"></span></td>
+								<td class="news_td"><span id="ns3" onclick="location3();"
+									style="cursor: pointer"></span></td>
 								<td class="date" id="date3"></td>
 							</tr>
 							<tr>
-								<td width="420"><span id="ns4" onclick="location4();" style="cursor:pointer" width="420"></span></td>
+								<td class="news_td"><span id="ns4" onclick="location4();"
+									style="cursor: pointer"></span></td>
 								<td class="date" id="date4"></td>
 							</tr>
 							<tr>
-								<td width="420"><span id="ns5" onclick="location5();" style="cursor:pointer" width="420"></span></td>
+								<td class="news_td"><span id="ns5" onclick="location5();"
+									style="cursor: pointer"></span></td>
 								<td class="date" id="date5"></td>
 							</tr>
 						</table>

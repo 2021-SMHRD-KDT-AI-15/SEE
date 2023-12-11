@@ -19,17 +19,18 @@ function callBackFunc_card(data) {
 		bul_list.push(data[i].bulletin_tit)
 		date_list.push(data[i].cardnews_date)
 	}
+
+	let link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16805";
+	let link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16804";
+	let link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16803";
+	let link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16802";
+	let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16801";
 	
-let link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16805";
-let link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16804";
-let link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16803";
-let link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16802";
-let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16801";
- function location1() { location.replace =link1;}
- function location2() { location.replace =link2;}
- function location3() { location.replace =link3;}
- function location4() { location.replace =link4;}
- function location5() { location.replace =link5;}
+	function location1() { location.href = link1; }
+	function location2() { location.href = link2; }
+	function location3() { location.href = link3; }
+	function location4() { location.href = link4; }
+	function location5() { location.href = link5; }
 
 	document.getElementById("ns1").textContent = news_list[0];
 	document.getElementById("ns2").textContent = news_list[1];
@@ -89,7 +90,7 @@ let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_000
 			backgroundColor: "transparent",
 			color: "white",
 			fontWeight: "normal"
-			
+
 		})
 		$("#bul_btn").css({
 			backgroundColor: "transparent",
@@ -115,7 +116,7 @@ let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_000
 			fontWeight: "normal"
 		})
 	})
-	
+
 	$("#news_btn").on("click", function() {
 		$("#news_btn").css({
 			backgroundColor: "white",
