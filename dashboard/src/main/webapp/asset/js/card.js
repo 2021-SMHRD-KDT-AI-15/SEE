@@ -20,17 +20,6 @@ function callBackFunc_card(data) {
 		date_list.push(data[i].cardnews_date)
 	}
 
-	let link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16805";
-	let link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16804";
-	let link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16803";
-	let link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16802";
-	let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16801";
-	
-	function location1() { location.href = link1; }
-	function location2() { location.href = link2; }
-	function location3() { location.href = link3; }
-	function location4() { location.href = link4; }
-	function location5() { location.href = link5; }
 
 	document.getElementById("ns1").textContent = news_list[0];
 	document.getElementById("ns2").textContent = news_list[1];

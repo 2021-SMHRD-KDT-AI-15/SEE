@@ -747,6 +747,26 @@ table {
 			src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+			<script>
+			let link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16805";
+			let link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16804";
+			let link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16803";
+			let link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16802";
+			let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16801";
+			
+			function location1() { location.href = link1; }
+			function location2() { location.href = link2; }
+			function location3() { location.href = link3; }
+			function location4() { location.href = link4; }
+			function location5() { location.href = link5; }
+			notice_btn.addEventListener("click", function() {
+				link1 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14698"
+				link2 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14697"
+				link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14696"
+				link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14695"
+				link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www788&boardId=BD_0000000022&seq=14694"
+			})
+			</script>
 		<script src="asset/js/job.js"></script>
 		<script src="asset/js/prom.js"></script>
 		<script src="asset/js/card.js"></script>
