@@ -753,22 +753,21 @@ table {
 			let link3 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16803";
 			let link4 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16802";
 			let link5 = "https://www.gwangju.go.kr/boardView.do?pageId=www789&boardId=BD_0000000027&seq=16801";
-
 			function location1() {
-				location.href = link1;
-			}
-			function location2() {
-				location.href = link2;
-			}
-			function location3() {
-				location.href = link3;
-			}
-			function location4() {
-				location.href = link4;
-			}
-			function location5() {
-				location.href = link5;
-			}
+	            window.open(link1);
+	         }
+	         function location2() {
+	            window.open(link2);
+	         }
+	         function location3() {
+	            window.open(link3);
+	         }
+	         function location4() {
+	            window.open(link4);
+	         }
+	         function location5() {
+	            window.open(link5);
+	         }
 			notice_btn
 					.addEventListener(
 							"click",
