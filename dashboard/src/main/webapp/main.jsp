@@ -332,7 +332,7 @@ table {
 						<table>
 							<tr>
 								<a href="https://bigdata.gwangju.go.kr/usr/main/goMain.rd"
-									target="_blank"><img src="asset/img/big.png"></a>
+									target="_blank"><img src="asset/img/bigdata.png" width="250"></a>
 							</tr>
 						</table>
 					</div>
@@ -486,7 +486,7 @@ table {
 					<div class="map-svg">
 						<svg xmlns="http://www.w3.org/2000/svg" version="1.2"
 							baseProfile="tiny" width="800" height="600"
-							viewBox="-150 80 1000 500" stroke-width="1"
+							viewBox="-150 20 1000 500" stroke-width="1"
 							stroke-linecap="round" stroke-linejoin="round">
             <g id="hangjeongdong_광주광역시">
                 <g ng-repeat="pop_rank in dong_pop_rank_list" ng-switch
@@ -669,7 +669,7 @@ table {
 							</tr>
 						</table>
 						<div class="title" id="img_title">
-							<img src="asset/img/news.png" width="20"
+							<img src="asset/img/news1.png" width="20"
 								style="margin-bottom: -4px;"> 카드뉴스
 							<button id="pause" width="20">
 								<img src="asset/img/video-pause-button.png" width="20">
