@@ -201,8 +201,6 @@ table {
 	<div class="bgimg"></div>
 	<span id="logo"><a href="main.jsp"><img width="25px"
 			src="asset/img/로고.svg"> <span class="head">광주광역시</span></a></span>
-	</div>
-	<div id="body">
 		<div id="header">
 			<hr>
 			<div id="full">
@@ -266,7 +264,6 @@ table {
 								<td rowspan="4" width="65">청년 <a
 									href="https://gjyouthcenter.kr/index.do?contentId=294"
 									target="_blank"><br> <span height="1px"></span><br>
-										</span>
 										<button class="job_btn">고용정책</button></a>
 								</td>
 								<td rowspan="2" width="100"><img src="asset/img/goal.png"
@@ -313,7 +310,6 @@ table {
 							</tr>
 							<td id="o_goal1" width=50></td>
 							<td id="o_goal2" width=50></td>
-							</tr>
 							<tr>
 								<td rowspan="2"><img src="asset/img/opportunity.png"
 									style="margin-bottom: -10px"><br> <br>취업자 수</td>

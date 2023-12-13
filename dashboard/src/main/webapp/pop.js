@@ -1,7 +1,4 @@
-
- 
- document.addEventListener("DOMContentLoaded", getdongData);
- 
+document.addEventListener("DOMContentLoaded", getdongData);
 
       function getdongData(){
             
