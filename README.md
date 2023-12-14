@@ -1,29 +1,25 @@
-# :pushpin: goQuality
->고퀄리티 개발 컨텐츠 공유 서비스  
-> 데모사이트 링크
+# :pushpin: 광주광역SEE
+>광주광역시 시정 대시보드  
+
 
 </br>
 
 ## 1. 제작 기간 & 참여 인원
 - 2019년 2월 18일 ~ 4월 5일
-- 개인 프로젝트
+- 팀 프로젝트
 
 </br>
 
 ## 2. 사용 기술
 #### `Back-end`
   - Java 8
-  - Spring Boot 2.3
-  - Gradle
-  - Spring Data JPA
-  - QueryDSL
-  - H2
-  - MySQL 5.7
-  - Spring Security
-  - Jsoup
+  - Oracle 11g
+  - Python
 #### `Front-end`
-  - Vue.js 3.0
-  - Element UI
+  - HTML
+  - CSS
+  - JS
+  - Chart.js
 
 </br>
 
