@@ -1,4 +1,4 @@
-# :pushpin: 광주광역SEE
+# :프로젝트명: 광주광역SEE
 >광주광역시 시정 대시보드  
 
 
@@ -30,13 +30,21 @@
 
 한개 이상의 시각화 요소를 한 화면에 모아서 배치하고 데이터를 한눈에 탐색할 수 있도록 설계한 대시보드를 주제로
 광주의 시정 현황을 한눈에 볼 수 있는 시각화 대시보드를 구현
+- 인구현황
+- 일자리
+- 실시간 날씨
+- 광주광역시 지도
+- 민원현황
+- 공약현황
+- 시정뉴스
+- 카드뉴스
 
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
 ### 4.1. 전체 흐름
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow1.png)
+![image](https://github.com/2021-SMHRD-KDT-AI-15/SEE/assets/150763254/d864e2e6-31d4-48ef-bbc1-7156a2a2b52d)
 
 ### 4.2. 사용자 요청
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
