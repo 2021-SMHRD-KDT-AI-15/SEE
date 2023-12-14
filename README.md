@@ -5,7 +5,7 @@
 </br>
 
 ## 1. 제작 기간 & 참여 인원
-- 2019년 2월 18일 ~ 4월 5일
+- 2023년 11월 29일 ~ 12월 13일
 - 팀 프로젝트
 
 </br>
@@ -24,14 +24,12 @@
 </br>
 
 ## 3. ERD 설계
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
-![](https://github.com/JungHyung2/gitio.io/blob/master/assets/images/portfolio/p1.jpg)
+![image](https://github.com/2021-SMHRD-KDT-AI-15/SEE/assets/150763254/6d731168-b39d-48cd-af33-7404abc9329e)
 
+## 4. 주요 기능
 
-## 4. 핵심 기능
-이 서비스의 핵심 기능은 컨텐츠 등록 기능입니다.  
-사용자는 단지 컨텐츠의 카테고리를 선택하고, URL만 입력하면 끝입니다.  
-이 단순한 기능의 흐름을 보면, 서비스가 어떻게 동작하는지 알 수 있습니다.  
+한개 이상의 시각화 요소를 한 화면에 모아서 배치하고 데이터를 한눈에 탐색할 수 있도록 설계한 대시보드를 주제로
+광주의 시정 현황을 한눈에 볼 수 있는 시각화 대시보드를 구현
 
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
