@@ -19,7 +19,7 @@
 ## 2. 기술스택
 |구분|내용|
 |------|---|
-|Back-end|Java, Python, JavaScript|
+|Back-end|Java(Maven, Mybatis), Python, JavaScript|
 |Front-end|Html, Css, JavaScript|
 |Data&Server|Oracle, Apache Tomcat|
 |API&Library|OpenWeatherMap, jQuery, Chart.js|
